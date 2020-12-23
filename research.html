@@ -22,24 +22,25 @@
 <h1>Research</h1>
 <table class="imgtable"><tr><td>
 <img src="opt.jpeg" alt="" width="220px" height="170px" />&nbsp;</td>
-<td align="left"><p>My current research focuses on designing and analyzing efficient optimization methods for problems arised in various domains such as data science, signal processing, and networking. My general interests can be roughly categorized into three intertwined topics:</p>
+<td align="left"><p>My current research focuses on designing and analyzing efficient optimization methods for problems emerging in contemporary domains, including data science, signal processing, and networking. My general interests and expertise can be grouped in three intertwined categories:</p>
 <ul>
 <li><p>First-order methods for (non)convex optimization </p>
 </li>
-<li><p>Large-scale optimization and federated learning</p>
+<li><p>Large-scale optimization and federated learning for IoT</p>
 </li>
 <li><p>Multi-armed bandits and their applications</p>
 </li>
 </ul>
-<p>To tackle challenges in these areas, my research follows a <i>general-specific</i> manner. Usually starting with efficient algorithms/methods to solve a reletively general problem, specific domain knowledge is added afterwards so that a detailed real-world application is at hand. Thanks to the fresh insights from the general problem, application-oriented efficient methods will be designed. And the lessons learned from the specific problem will be fed back to the general one to in turn reinforce the understanding.</p>
+<p>To tackle challenges in these areas, my research follows a <i>top-down</i> approach, starting with efficient algorithms to solve a reletively general problem, before leveraging domain knowledge to address real-world applications. The lessons learned from the specific problem are fed back to the general one to gain the understanding.</p>
 </td></tr></table>
 <h2>First-order methods for (non)convex optimization</h2>
-<p>We have worked on different first-order algorithms, from perspectives such as <tt>variance reduction</tt>, <tt>acceleration (Nesterov's momentum)</tt>, and <tt>Frank-Wolfe (FW) methods (conditional gradient)</tt>. Please check out <a href="publications.html">my publications</a>. Below you can glance through my research taking one of our recent works on FW and its applications as an example. </p>
+<p>In a series of publications, we have contributed to first-order (i.e., gradient-based) algorithms, namely, <tt>variance reduction</tt>, <tt>acceleration (Nesterov's momentum)</tt>, and <tt>Frank-Wolfe (FW, aka conditional gradient)</tt>. As an example, we outline next one of our recent works on FW and its applications. </p>
 <table class="imgtable"><tr><td>
 <img src="extrafw.png" alt="This pic will be updated soon." width="1000px" height="230px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <ul>
-<li><p><i>General theories.</i> Aiming at convex optimization under structural constraints, two FW variants termed <tt>AFW</tt> and <tt>ExtraFW</tt> are introduced and analyzed. The proposed algorithms natrually inherit the merits of FW, such as low iterative computation cost and suitability to sparsity-promoting problems. To cope with the main complaint of FW, which is its slow convergence, both AFW and ExtraFW achieve (local) acceleration on a class of constraints, including widely used ones in machine learning. In addition, AFW and ExtraFW belong to those few first-order algorithms that achieve (local) accleration without relying on line-search or problem-dependent parameters such as Lipschitz constant in their step sizes. The theories are validated through numerical tests shown above. For binary classification, both AFW and ExtraFW peform surprisingly well, i.e., even faster than projected NAG (Nesterov's accelerated gradient). For matrix completion problems that are ubiquitous in recommender systems, the proposed algorithms find solutions with lower optimality error compared with FW.</p>
+<li><p><i>General theory.</i> 
+We introduced and analyzed two FW variants, termed <tt>AFW</tt> and <tt>ExtraFW</tt>, aiming at convex optimization under structural constraints. The proposed algorithms inherit the merits of FW, such as low iterative computation cost and suitability to sparsity-promoting problems. More importantly, AFW and ExtraFW achieve (local) acceleration under a class of constraints that are widely used in machine learning, overcoming the  main limitation of FW. In fact, AFW and ExtraFW belong to those few first-order algorithms that achieve (local) accleration without relying on line-search or problem-dependent parameters such as Lipschitz constant in their step sizes. The theories are validated through numerical tests shown above. For binary classification, both AFW and ExtraFW peform surprisingly well, i.e., even faster than projected NAG (Nesterov's accelerated gradient). For matrix completion problems that are ubiquitous in recommender systems, the proposed algorithms find solutions with lower optimality error compared with FW.</p>
 </li>
 </ul>
 <ul>
@@ -99,7 +100,7 @@
 </ol>
 <div id="footer">
 <div id="footer-text">
-Page generated 2020-12-21 09:00:01 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2020-12-22 21:05:38 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
