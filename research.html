@@ -31,7 +31,7 @@
 <li><p>Multi-armed bandits and their applications</p>
 </li>
 </ul>
-<p>To tackle challenges in these areas, my research follows a <i>top-down</i> approach, starting with efficient algorithms to solve a reletively general problem, before leveraging domain knowledge to address real-world applications. The lessons learned from the specific problem are fed back to the general one to gain the understanding.</p>
+<p>To tackle challenges in these areas, my research follows a <i>top-down</i> approach, starting with efficient algorithms to solve a relatively general problem, before leveraging domain knowledge to address real-world applications. The lessons learned from the specific problem are fed back to the general one to gain the understanding.</p>
 </td></tr></table>
 <h2>First-order methods for (non)convex optimization</h2>
 <p>In a series of publications, we have contributed to first-order (i.e., gradient-based) algorithms, namely, <tt>variance reduction</tt>, <tt>acceleration (Nesterov's momentum)</tt>, and <tt>Frank-Wolfe (FW, aka conditional gradient)</tt>. As an example, we outline next one of our recent works on FW and its applications. </p>
@@ -40,14 +40,14 @@
 <td align="left"></td></tr></table>
 <ul>
 <li><p><i>General theory.</i> 
-We introduced and analyzed two FW variants, termed <tt>AFW</tt> and <tt>ExtraFW</tt>, aiming at convex optimization under structural constraints. The proposed algorithms inherit the merits of FW, such as low iterative computation cost and suitability to sparsity-promoting problems. More importantly, AFW and ExtraFW achieve (local) acceleration under a class of constraints that are widely used in machine learning, overcoming the  main limitation of FW. In fact, AFW and ExtraFW belong to those few first-order algorithms that achieve (local) accleration without relying on line-search or problem-dependent parameters such as Lipschitz constant in their step sizes. The theories are validated through numerical tests shown above. For binary classification, both AFW and ExtraFW peform surprisingly well, i.e., even faster than projected NAG (Nesterov's accelerated gradient). For matrix completion problems that are ubiquitous in recommender systems, the proposed algorithms find solutions with lower optimality error compared with FW.</p>
+We introduced and analyzed two FW variants, termed <tt>AFW</tt> and <tt>ExtraFW</tt>, aiming at convex optimization under structural constraints. The proposed algorithms inherit the merits of FW, such as low iterative computation cost and suitability to sparsity-promoting problems. More importantly, AFW and ExtraFW achieve (local) acceleration under a class of constraints that are widely used in machine learning, overcoming the main limitation of FW. In fact, AFW and ExtraFW belong to those few first-order algorithms that achieve (local) acceleration without relying on line-search or problem-dependent parameters such as Lipschitz constant in their step sizes. The theories are validated through numerical tests shown above. For binary classification, both AFW and ExtraFW perform surprisingly well, i.e., even faster than projected NAG (Nesterov's accelerated gradient). For matrix completion problems that are ubiquitous in recommender systems, the proposed algorithms find solutions with lower optimality error compared with FW.</p>
 </li>
 </ul>
 <ul>
-<li><p><i>A specific application.</i> Here we introduce an interesting setting of <b>pruning neural networks</b> using AFW and ExtraFW. Although currently this is only a &ldquo;proposal&rdquo; mainly because I do not have enough time to follow up, we are optimistic that this will work. A recent <a href="http://proceedings.mlr.press/v119/ye20b/ye20b.pdf">ICML paper</a> shows that pruning an <i>overparametrized</i> neural network is easier than those regular-sized ones when relying on (slightly modified) FW. They have unveiled a link between FW's convergence and the number of neurons lefted after pruning. However, &ldquo;overparameterization&rdquo; is a vague discription since there is no guidance on the number of neurons required. To cope with such a problem, we postulate that the theoretical results of AFW and ExtraFW can be extended to pruning. As a result, AFW's (or ExtraFW's) quatifiable locally accelerated rate sheds light on the <b>least</b> number of neurons required to enjoy the merits of overparametrization. Besides, because AFW and ExtraFW are numerically more attractive than FW, we also expect that for neural network pruning they can share similar, if not improved, performance with FW.  </p>
+<li><p><i>A specific application.</i> Here we introduce an interesting setting of <b>pruning neural networks</b> using AFW and ExtraFW. Although currently this is only a &ldquo;proposal&rdquo; mainly because I do not have enough time to follow up, we are optimistic that this will work. A recent <a href="http://proceedings.mlr.press/v119/ye20b/ye20b.pdf">ICML paper</a> shows that pruning an <i>overparametrized</i> neural network is easier than those regular-sized ones when relying on (slightly modified) FW. They have unveiled a link between FW's convergence and the number of neurons left after pruning. However, &ldquo;overparameterization&rdquo; is a vague description since there is no guidance on the number of neurons required. To cope with such a problem, we postulate that the theoretical results of AFW and ExtraFW can be extended to pruning. As a result, AFW's (or ExtraFW's) quantifiable locally accelerated rate sheds light on the <b>least</b> number of neurons required to enjoy the merits of overparametrization. Besides, because AFW and ExtraFW are numerically more attractive than FW, we also expect that for neural network pruning they can share similar, if not improved, performance with FW.  </p>
 </li>
 </ul>
-<p><b>Relevent works</b></p>
+<p><b>Relevant works</b></p>
 <ol>
 <li><p><b>B. Li</b>, L. Wang, G. B. Giannakis, and Z. Zhao, &ldquo;<a href="https://arxiv.org/pdf/2012.05284.pdf">Enhancing Parameter-Free Frank Wolfe with an Extra Subproblem</a>,&rdquo; <i>Proc. of 35th AAAI Conf. on Artificial Intelligence (AAAI)</i>, February 2-9, 2021.</p>
 </li>
@@ -60,14 +60,14 @@ We introduced and analyzed two FW variants, termed <tt>AFW</tt> and <tt>ExtraFW<
 <img src="FL.png" alt="This pic will be updated soon." width="950px" height="290px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <ul>
-<li><p><i>General theories.</i> In a FL setting with a central server and multiple workers, many existing approaches aim to reduce the upload communication but not the download overhead. Consequently, the overall improvement of communication efficiency is still limited. We propose <tt>TWICE</tt>, a method that advocates compressing the both upload and download innovation with guaranteed benefits. Another line of research addresses the challenges in asynchrony and delay due to e.g., IoT mobility and heterogeneity. In this context, we have developed algorithms for delayed online learning that can be run asynchronously on servers without sacrificing too much performance.</p>
+<li><p><i>General theory.</i> In a FL setting with a central server and multiple workers, many existing approaches aim to reduce the upload communication but not the download overhead. Consequently, the overall improvement of communication efficiency is still limited. We propose <tt>TWICE</tt>, a method that advocates compressing both upload and download innovation with guaranteed benefits. Another line of research addresses the challenges in asynchrony and delay due to e.g., IoT mobility and heterogeneity. In this context, we have developed algorithms for delayed online learning that can be run asynchronously on servers without sacrificing too much performance.</p>
 </li>
 </ul>
 <ul>
-<li><p><i>Specific applications.</i> FL is extremely suitable for IoT due to its scalability and robustness. As an example, consider an online energy management task in smart grids where the goal is learning to dispatch power in the most economical manner with the aid of renewables while maintaining the energy level of batteries stable in long-run. This specific &ldquo;stablility&rdquo; requirement challenges the standard deployment of FL. We thus provide an elegant soulution so that the requirement on the battery capacity to prevent overcharging is greatly reduced. In a parallel work, FL is leveraged in edge computing setups so that devices can collaboratively handle adverasarial jammers. In a nutshell, we see great potential of FL in various IoT applications, with the ultimate goal of benefiting everyone's daily life.</p>
+<li><p><i>Specific applications.</i> FL is extremely suitable for IoT due to its scalability and robustness. As an example, consider an online energy management task in smart grids where the goal is learning to dispatch power in the most economical manner with the aid of renewables while maintaining the energy level of batteries stable in long-run. This specific &ldquo;stability&rdquo; requirement challenges the standard deployment of FL. We thus provide an elegant solution so that the requirement on the battery capacity to prevent overcharging is greatly reduced. In a parallel work, FL is leveraged in edge computing setups so that devices can collaboratively handle adversarial jammers. In a nutshell, we see great potential of FL in various IoT applications, with the ultimate goal of benefiting everyone's daily life.</p>
 </li>
 </ul>
-<p><b>Relevent works</b></p>
+<p><b>Relevant works</b></p>
 <ol>
 <li><p><b>B. Li</b>, T. Chen, and G. B. Giannakis, &ldquo;<a href="http://proceedings.mlr.press/v89/li19d/li19d.pdf">Bandit Online Learning with Unknown Delays</a>,&rdquo; <i>Proc. of Intl. Conf. on Artificial Intell. and Stat. (AISTATS)</i>, Naha, Japan, April 2019.</p>
 </li>
@@ -79,19 +79,19 @@ We introduced and analyzed two FW variants, termed <tt>AFW</tt> and <tt>ExtraFW<
 </li>
 </ol>
 <h2>Multi-armed bandits and their applications</h2>
-<p>The multi-armed bandit (MAB) probelm models a scenario where the learner copes with the &ldquo;exploration-exploitation&rdquo; delimma to interactively learn from the enviroument. MAB is widely adopted in recommender systems, e.g., web search and online advertising, because its simple yet powerful framework facilitates sequential decision making under uncertainties. My background leans toward adversarial bandits, but still have a fair understanding on those stochastic ones. </p>
+<p>The multi-armed bandit (MAB) problem models a scenario where the learner copes with the &ldquo;exploration-exploitation&rdquo; dilemma to interactively learn from the environment. MAB is widely adopted in recommender systems, e.g., web search and online advertising, because its simple yet powerful framework facilitates sequential decision making under uncertainties. My background leans toward adversarial bandits, but still have a fair understanding on those stochastic ones. </p>
 <table class="imgtable"><tr><td>
 <img src="bandit.png" alt="This pic will be updated soon." width="950px" height="180px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <ul>
-<li><p><i>General theories.</i> Sometimes the traditional MAB model is oversimplified to capture real behaviors in recommender systems. We have developed provably efficient algorithms to handle two particular scenarios: MAB with unknown delay, and contextual MAB with graph feedback; see the above figure. Technically, our solutions rely on two <i>biased</i> estimators in contrast with typically adopted unbiased ones. Theoretical justifications are established to showcase that the proposed methods can indeed handle the target scenarios efficiently.</p>
+<li><p><i>General theory.</i> Sometimes the traditional MAB model is oversimplified to capture real behaviors in recommender systems. We have developed provably efficient algorithms to handle two particular scenarios: MAB with unknown delay, and contextual MAB with graph feedback; see the above figure. Technically, our solutions rely on two <i>biased</i> estimators in contrast with typically adopted unbiased ones. Theoretical justifications are established to showcase that the proposed methods can indeed handle the target scenarios efficiently.</p>
 </li>
 </ul>
 <ul>
 <li><p><i>A Specific application.</i> Despite aforementioned MAB theories can more or less find their applications in recommender systems, here we consider a more detailed setting, where the user preferences change in a piecewise-stationary manner in <i>cascading bandits</i>. In this context, the recommender system chooses a list of items for the user; and the user browses this list in order until clicking on the first attractive item. New approaches based on change-point detection techniques are developed with supportive theories and numerical experiments.</p>
 </li>
 </ul>
-<p><b>Relevent works</b></p>
+<p><b>Relevant works</b></p>
 <ol>
 <li><p><b>B. Li</b>, T. Chen, and G. B. Giannakis, &ldquo;<a href="http://proceedings.mlr.press/v89/li19d/li19d.pdf">Bandit Online Learning with Unknown Delays</a>,&rdquo; <i>Proc. of Intl. Conf. on Artificial Intell. and Stat. (AISTATS)</i>, Naha, Japan, April 2019.</p>
 </li>
@@ -100,7 +100,7 @@ We introduced and analyzed two FW variants, termed <tt>AFW</tt> and <tt>ExtraFW<
 </ol>
 <div id="footer">
 <div id="footer-text">
-Page generated 2020-12-22 21:05:38 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2020-12-22 22:13:49 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
