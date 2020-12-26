@@ -55,16 +55,16 @@ We introduced and analyzed two FW variants, termed <tt>AFW</tt> and <tt>ExtraFW<
 </li>
 </ol>
 <h2>Large-scale optimization and federated learning</h2>
-<p>The widespread consensus on future machine learning is that tasks should be performed locally on device directly to handle critical issues such as data privacy, data security, and heterogeneous data. Federated learning (FL) is a general framework in pursuit of this goal; see a few introductory <a href="https://federated.withgoogle.com/">comics from Google AI</a>. Next we emphasize FL's application in <tt>Internet of Things (IoT)</tt> using some of our works as examples.</p>
+<p>The widespread consensus on future machine learning is that tasks should be performed locally on device directly to handle critical issues such as data privacy, data security, and heterogeneous data. Federated learning (FL) is a general framework in pursuit of this goal. Next we emphasize FL's application in <tt>Internet of Things (IoT)</tt> using some of our works as examples.</p>
 <table class="imgtable"><tr><td>
-<img src="FL.png" alt="This pic will be updated soon." width="950px" height="290px" />&nbsp;</td>
+<img src="distributed.png" alt="This pic will be updated soon." width="1000px" height="180px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <ul>
-<li><p><i>General theory.</i> In a FL setting with a central server and multiple workers, many existing approaches aim to reduce the upload communication but not the download overhead. Consequently, the overall improvement of communication efficiency is still limited. We propose <tt>TWICE</tt>, a method that advocates compressing both upload and download innovation with guaranteed benefits. Another line of research addresses the challenges in asynchrony and delay due to e.g., IoT mobility and heterogeneity. In this context, we have developed algorithms for delayed online learning that can be run asynchronously on servers without sacrificing too much performance.</p>
+<li><p><i>General theory.</i> In a FL setting with a central server and multiple workers, many existing approaches aim to reduce the upload communication but not the download overhead. Consequently, the overall improvement of communication efficiency is still limited. We propose <tt>TWICE</tt>, a method that advocates compressing both upload and download innovation with guaranteed benefits; see the table above numerical performance. Another line of research addresses the challenges in asynchrony and delay due to e.g., IoT mobility and heterogeneity. In this context, we have developed <tt>DEXP3</tt> for delayed online learning that can be run asynchronously on servers without sacrificing too much performance; see the first figure above.</p>
 </li>
 </ul>
 <ul>
-<li><p><i>Specific applications.</i> FL is extremely suitable for IoT due to its scalability and robustness. As an example, consider an online energy management task in smart grids where the goal is learning to dispatch power in the most economical manner with the aid of renewables while maintaining the energy level of batteries stable in long-run. This specific &ldquo;stability&rdquo; requirement challenges the standard deployment of FL. We thus provide an elegant solution so that the requirement on the battery capacity to prevent overcharging is greatly reduced. In a parallel work, FL is leveraged in edge computing setups so that devices can collaboratively handle adversarial jammers. In a nutshell, we see great potential of FL in various IoT applications, with the ultimate goal of benefiting everyone's daily life.</p>
+<li><p><i>Specific applications.</i> FL is extremely suitable for IoT due to its scalability and robustness. As an example, consider an online energy management task in smart grids where the goal is learning to dispatch power in the most economical manner with the aid of renewables while maintaining the energy level of batteries stable in long-run. This specific &ldquo;stability&rdquo; requirement challenges the standard deployment of FL. We thus provide an elegant solution so that the requirement on the battery capacity to prevent overcharging is greatly reduced; see the green line in the last figure above. In a parallel work, FL is leveraged in edge computing setups so that devices can collaboratively handle adversarial jammers. In a nutshell, we see great potential of FL in various IoT applications, with the ultimate goal of benefiting everyone's daily life.</p>
 </li>
 </ul>
 <p><b>Relevant works</b></p>
@@ -81,14 +81,14 @@ We introduced and analyzed two FW variants, termed <tt>AFW</tt> and <tt>ExtraFW<
 <h2>Multi-armed bandits and their applications</h2>
 <p>The multi-armed bandit (MAB) problem models a scenario where the learner copes with the &ldquo;exploration-exploitation&rdquo; dilemma to interactively learn from the environment. MAB is widely adopted in recommender systems, e.g., web search and online advertising, because its simple yet powerful framework facilitates sequential decision making under uncertainties. My background leans toward adversarial bandits, but still have a fair understanding on those stochastic ones. </p>
 <table class="imgtable"><tr><td>
-<img src="bandit.png" alt="This pic will be updated soon." width="950px" height="180px" />&nbsp;</td>
+<img src="bandit.png" alt="This pic will be updated soon." width="1000px" height="200px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <ul>
 <li><p><i>General theory.</i> Sometimes the traditional MAB model is oversimplified to capture real behaviors in recommender systems. We have developed provably efficient algorithms to handle two particular scenarios: MAB with unknown delay, and contextual MAB with graph feedback; see the above figure. Technically, our solutions rely on two <i>biased</i> estimators in contrast with typically adopted unbiased ones. Theoretical justifications are established to showcase that the proposed methods can indeed handle the target scenarios efficiently.</p>
 </li>
 </ul>
 <ul>
-<li><p><i>A Specific application.</i> Despite aforementioned MAB theories can more or less find their applications in recommender systems, here we consider a more detailed setting, where the user preferences change in a piecewise-stationary manner in <i>cascading bandits</i>. In this context, the recommender system chooses a list of items for the user; and the user browses this list in order until clicking on the first attractive item. New approaches based on change-point detection techniques are developed with supportive theories and numerical experiments.</p>
+<li><p><i>A Specific application.</i> Despite aforementioned MAB theories can more or less find their applications in recommender systems, here we consider a more detailed setting, where the user preferences change in a piecewise-stationary manner in <i>cascading bandits</i>. In this context, the recommender system chooses a list of items for the user; and the user browses this list in order until clicking on the first attractive item. New approaches based on <tt>GLRT</tt> for change-point detection are developed with supportive theories and numerical experiments; see the figures above.</p>
 </li>
 </ul>
 <p><b>Relevant works</b></p>
@@ -100,7 +100,7 @@ We introduced and analyzed two FW variants, termed <tt>AFW</tt> and <tt>ExtraFW<
 </ol>
 <div id="footer">
 <div id="footer-text">
-Page generated 2020-12-22 22:13:49 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2020-12-25 16:14:41 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
