@@ -1,5 +1,11 @@
+
 menu
-    Home                [index.html]
-	Publications        [publications.html]
-	Experience			[experience.html]
-    Awards			    [awards.html]
+	home   [index.html]
+
+bio
+	experience			[experience.html]
+	awards			    [awards.html]
+	
+publications
+	by year    [pub_by_year.html]
+	by topic   [pub_by_topic.html]

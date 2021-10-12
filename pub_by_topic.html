@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title></title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">menu</div>
+<div class="menu-item"><a href="index.html">home</a></div>
+<div class="menu-category">bio</div>
+<div class="menu-item"><a href="experience.html">experience</a></div>
+<div class="menu-item"><a href="awards.html">awards</a></div>
+<div class="menu-category">publications</div>
+<div class="menu-item"><a href="pub_by_year.html">by&nbsp;year</a></div>
+<div class="menu-item"><a href="pub_by_topic.html" class="current">by&nbsp;topic</a></div>
+</td>
+<td id="layout-content">
+<h2>Optimization</h2>
+<p>The list below contains various faster and practical optimizers that can improve numerical efficiency.</p>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2110.04243">Heavy Ball Momentum for Conditional Gradient</a> <br />
+<b>B. Li</b>, A. Sadeghi, and G. B. Giannakis <br />
+<i>Proc. <b>NeurIPS 2021</b></i>. (acceptance rate 26%) <br />
+TLDR: Heavy ball momentum is helpful to obtain a tightened stopping criterion in Conditional Gradient (or FW) method. </p>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://www.dtc.umn.edu/s/resources/spincom8618.pdf">A Momentum-Guided Frank-Wolfe Algorithm</a> <br />
+<b>B. Li</b>, Mario Coutino, G. B. Giannakis, and G. Leus <br />
+<b><i>IEEE Transactions on Signal Processing</i></b>, vol. 69, pp. 3597-3611, June 2021.<br />
+TLDR: Nesterov's momentum improves convergence rate of FW on a class of problems. </p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2012.05284.pdf">Enhancing Parameter-Free Frank Wolfe with an Extra Subproblem</a> <br />
+<b>B. Li</b>, L. Wang, G. B. Giannakis, and Z. Zhao <br />
+<i>Proc. <b>AAAI 2021</b></i>. (acceptance rate 18.7%)<br />
+TLDR: A variant of Nesterov's momentum in FW further improves convergence rate in the TSP paper above.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://proceedings.mlr.press/v119/li20n/li20n.pdf">Almost Tune-Free Variance Reduction</a> <br />
+<b>B. Li</b>, L. Wang, and G. B. Giannakis <br />
+<i>Proc. <b>ICML 2020</b></i>. (acceptance rate 21.8%) <br />
+TLDR: Practical SVRG and SARAH that eliminate manually tuning parameters.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1910.06532.pdf">Adaptive Step Sizes in Variance Reduction via Regularization</a> <br />
+<b>B. Li</b>, and G. B. Giannakis. <br />
+Technical repoort. <br />
+TLDR: An extension of the above ICML paper to more general problems.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://proceedings.mlr.press/v108/li20a/li20a.pdf">On the Convergence of SARAH and Beyond</a> <br />
+<b>B. Li</b>, M. Ma, and G. B. Giannakis  <br />
+<i>Proc. <b>AISTATS 2020</b></i>. <br />
+TLDR: A variant of SARAH is developed with more rigorous convergence analysis.</p>
+</li>
+</ul>
+<ul>
+<li><p>Frank Wolfe with Averaged Gradients <br />
+Y. Zhang, <b>B. Li</b>, and G. B. Giannakis <br />
+<i>Proc. <b>ICASSP 2021</b></i>. <br />
+TLDR: A few variants of FW are developed.</p>
+</li>
+</ul>
+<ul>
+<li><p>Revisit of Estimate Sequence for Accelerated Gradient Method <br />
+<b>B. Li</b>, M. Coutino, and G. B. Giannakis <br />
+<i>Proc. <b>ICASSP 2020</b></i>. <br />
+TLDR: Deeper understaning and more insights for Nesterov's momentum.</p>
+</li>
+</ul>
+<h2>Distributed systems</h2>
+<p>Works focus on distributed training and systems are summarized here.</p>
+<ul>
+<li><p>A work done at AWS on distributed training of neural networks. The title is intensionally hided since this paper is currently under review.  <br />
+Anonymous authors <br />
+<i>submitted to <b>ICLR 2022</b></i></p>
+</li>
+</ul>
+<ul>
+<li><p>TWICE: Two-Way Innovation Compression for Communication Efficient Federated Learning <br />
+J. Sun, <b>B. Li</b>, T. Chen, Q. Yang, Z. Yang, and G. B. Giannakis <br />
+<i>submitted to <b>IEEE Transactions on Cybernetics</b></i>, July 2020. <br />
+TLDR: We propose a novel communication efficient method for federated learning.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1905.10456.pdf">Tight Linear Convergence Rate of ADMM for Decentralized Optimization</a><br />
+M. Ma, <b>B. Li</b>, and G. B. Giannakis. <br />
+Technical report. <br />
+TLDR: Extension of an <a href="https://arxiv.org/abs/1410.8479">ADMM paper</a> to more general communication graphs.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://www.dtc.umn.edu/s/resources/spincom8471.pdf">Real-time Optimal Energy Management with Reduced Battery Capacity Requirements</a> <br />
+<b>B. Li</b>, T. Chen, X. Wang, and G. B. Giannakis <br />
+<b><i>IEEE Transactions on Smart Grid</i></b>, vol. 10, no. 2, pp. 1928-1938, March 2019.<br />
+TLDR: A learning based method to reduce the battery capacity requirement in smart grids, and its distributed implementation via ADMM. </p>
+</li>
+</ul>
+<ul>
+<li><p>Real-Time Energy Management with Improved Cost-Capacity Tradeoff <br />
+<b>B. Li</b>, T. Chen, X. Wang, and G. B. Giannakis <br />
+<i>Proc. <b>GlobalSIP 2017</b></i>. <br />
+TLDR: Short version of the above TSG paper. </p>
+</li>
+</ul>
+<h2>Learning under uncertainty</h2>
+<p>Works to harness statistical efficiency when learning under uncertainties.</p>
+<ul>
+<li><p><a href="https://openreview.net/pdf?id=DYP3ZUj9nN8">Distributionally Robust Semi-supervised Learning over Graphs</a> <br />
+A. Sadeghi, M. Ma, <b>B. Li</b>, and G. B. Giannakis <br />
+<i>Proc. <b>ICLR 2021</b>, Workshop on <b>Responsible AI</b></i>. <br />
+TLDR: We develop distributionally robust graph neural networks (GNN).</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2012.05756.pdf">Adversarial Linear Contextual Bandits with Graph-Structured Side Observations</a> <br />
+L. Wang, <b>B. Li</b>, H. Zhou, G. B. Giannakis, L. R. Varshney, and Z. Zhao  <br />
+<i>Proc. <b>AAAI 2021</b></i>. (acceptance rate 18.7%) <br />
+TLDR: Two efficient algorithms are proposed for contextual bandits with side observations.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://proceedings.mlr.press/v89/li19d/li19d.pdf">Bandit Online Learning with Unknown Delays</a> <br />
+<b>B. Li</b>, T. Chen, and G. B. Giannakis <br />
+<i>Proc. <b>AISTATS 2019</b></i>. (acceptance rate 32.4%) <br />
+TLDR: We study adversarial bandit problem under delayed feedback, where the delay is unknown. This is useful for certain scenarios in recommender systems.</p>
+</li>
+</ul>
+<ul>
+<li><p>Near-Optimal Algorithms for Piecewise-Stationary Cascading Bandits <br />
+L. Wang, H. Zhou, <b>B. Li</b>, L.R. Varshney, and Z. Zhao <br />
+<i>Proc. <b>ICASSP 2021</b></i>. <br />
+TLDR: Cascading bandits in piecewise-stationary environment.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.dtc.umn.edu/s/resources/spincom8513.pdf">Secure Mobile Edge Computing in IoT via Collaborative Online Learning</a> <br />
+<b>B. Li</b>, T. Chen, and G. B. Giannakis <br />
+<b><i>IEEE Transactions on Signal Processing</i></b>, vol. 67, no. 23, pp. 5922-5935, December 2019. <br />
+TLDR: We handle jamming and adversarial attacks in edge computing using collaborative bandit algorithms.</p>
+</li>
+</ul>
+<ul>
+<li><p>Secure Edge Computing in IoT via Online Learning <br />
+<b>B. Li</b>, T. Chen, and G. B. Giannakis <br />
+<i>Proc. <b>Asilomar 2018</b></i>. <br />
+TLDR: A short version of the TSP paper above.</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1909.04299.pdf">Finite-Time Analysis of Biased Stochastic Approximation with Application to Reinforcement Learning</a> <br />
+G. Wang, <b>B. Li</b>, and G. B. Giannakis <br />
+<i>submitted to <b>IEEE Transactions on Automatic Control</b></i>, March 2020. <br />
+TLDR: We study convergence of stochastic approximation under Markovian environment for reinforcement learning.</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-10-11 21:14:35 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
