@@ -1,0 +1,10 @@
+
+menu
+	home   [index.html]
+
+bio
+	experience			[exp.html]
+	awards			    [awards.html]
+	
+research
+	publications    [pub.html]
