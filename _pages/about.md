@@ -9,7 +9,7 @@ redirect_from:
 
 Welcome, it's a pleasure to connect with you! I'm Bingcong Li, a postdoctoral researcher at ETH Zurich collaborating with [Prof. Niao He](https://odi.inf.ethz.ch/niaohe) and the [ODI group](https://odi.inf.ethz.ch/). Prior to this, I received doctoral degree from the University of Minnesota under the supervision of [Prof. Georgios B. Giannakis](https://sites.google.com/umn.edu/giannakis/home), and then I gained industry experience, dedicating a year to LLMs.
 
-**I leverage optimization to further enhance the excitement surrounding deep learning.** My primary focus is on elevating the generalization capabilities of models and advancing them towards greater robustness and trustworthiness.
+**My research leverages optimization to further enhance the excitement surrounding deep learning.** My primary focus is on elevating the generalization capabilities of models and advancing them towards greater robustness and trustworthiness.
 
 
 Recent updates
