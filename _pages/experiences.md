@@ -9,21 +9,21 @@ Education
 ----
 
 - ETH Zurich, Switzerland: Postdoc, Computer Science, working with [Prof. Niao He](https://odi.inf.ethz.ch/niaohe.html), Jan 2024 -- now.
-- [University of Minnesota](https://twin-cities.umn.edu/), MN, USA: Ph.D, Electrical and Computer Engineering, advised by [Prof. Georgios B. Giannakis](http://spincom.umn.edu/georgios/ ), September 2017 - May 2022.
+- University of Minnesota, MN, USA: Ph.D, Electrical and Computer Engineering, advised by [Prof. Georgios B. Giannakis](http://spincom.umn.edu/georgios/ ), September 2017 - May 2022.
 - University of Minnesota, MN, USA: M.S., Electrical and Computer Engineering, September 2017 - June 2019.
 - Fudan University, China: B.S., Electronic and Information Science and Technology, advised by [Prof. Xin Wang](http://www.it.fudan.edu.cn/En/Data/View/1786 ), September 2013 - July 2017.
 
 
 Industry 
 ----
-- Research scientist, *****, AI lab, Shanghai, China, August 2022 - Dec 2023
+<!-- - Research scientist, *****, AI lab, Shanghai, China, August 2022 - Dec 2023 -->
 - Applied scientist intern, Amazon Web Services (AWS) AI lab, East Palo Alto, CA, June 2021 - Dec 2021
 - Digital signal processing intern, National Instruments, Shanghai, China, December 2016 - March 2017
 
 
 Reviewer activities
 ----
-- NeurIPS 2021 - 2023
+- NeurIPS 2021 - 2024
 - ICML 2021 - 2024
 - ICLR 2022 - 2024
 - AISTATS 2021 - 2023
@@ -34,7 +34,7 @@ Reviewer activities
 - IEEE Transactions on Neural Networks and Learning Systems
 - IEEE Transaction on Communications 
 - IEEE Transactions on Automatic Control
-- IEEE Journal on Selected Areas in Signal Processing
+- IEEE Journal on Selected Topics in Signal Processing
 - IEEE Journal on Selected Areas in Communications
 - IEEE Transactions on Vehicular Technology
 - IEEE Signal Processing Letters

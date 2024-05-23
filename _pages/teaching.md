@@ -7,7 +7,7 @@ author_profile: true
 
 Student projects 
 ----
-We do have projects for ETH master students. The lastest ones can be found in [ODI student projects](https://odi.inf.ethz.ch/ThesisProjects).
+We do have projects for ETH master and bachelor students. The lastest ones can be found in [ODI student projects](https://odi.inf.ethz.ch/ThesisProjects).
 
 
 
