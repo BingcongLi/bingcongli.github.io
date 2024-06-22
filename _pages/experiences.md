@@ -56,7 +56,7 @@ Awards
 
 - ADC Fellowship, University of Minnesota, 2017
 - Graduated with Honors: Excellence Undergraduate Student of Fudan University, 2017
-- Samsung Scholarship (top 2\%), 2015-2016
-- National Scholarship (top 1\%), China, 2014-2015
-- National Scholarship (top 1\%), China, 2013-2014
+- Samsung Scholarship (top 2%), 2015-2016
+- National Scholarship (top 1%), China, 2014-2015
+- National Scholarship (top 1%), China, 2013-2014
 - Gold medal in China High School Biology Olympiad, Hebei, China, 2012

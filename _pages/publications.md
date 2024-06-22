@@ -12,9 +12,8 @@ Conference Papers
 
 - **DPZero: Private Fine-Tuning of Language Models without Backpropagation** <br>
    L. Zhang, *B.Li*, K. K. Thekumparampil, S. Oh, N. He.  *ICML 2024*  <br>
-  \[[paper](https://arxiv.org/abs/2310.09639)\]
+  \[[paper](https://arxiv.org/abs/2310.09639)\] \[[code](https://github.com/Liang137/DPZero)\]
   
-
 - **Enhancing Sharpness-Aware Optimization through Variance Suppression** <br>
 	*B. Li*, G. B. Giannakis. *NeurIPS 2023*   <br>
 	\[[paper](https://arxiv.org/abs/2309.15639)\] \[[code](https://github.com/BingcongLi/VaSSO)\]
@@ -55,7 +54,7 @@ Conference Papers
    
 - **Meta-Learning with Versatile Loss Geometries for Fast Adaptation Using Mirror Descent** <br>
     Y. Zhang, *B. Li*, G. B. Giannakis. *ICASSP 2024* <br>
-	\[[paper](https://arxiv.org/abs/2312.13486)\]
+	\[[paper](https://arxiv.org/abs/2312.13486)\] \[[code](https://github.com/zhangyilang/MetaMirrorDescent)\]
 
 - **Conic Descent Redux for Memory-Efficient Optimization** <br>
     *B. Li*, and G. B. Giannakis. *Asilomar 2023* <br>
