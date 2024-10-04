@@ -9,6 +9,10 @@ Student projects
 ----
 We do have projects for ETH master and bachelor students. The lastest ones can be found in [ODI student projects](https://odi.inf.ethz.ch/ThesisProjects).
 
+Here are some github projects from supervised theses. 
+
+[[Example 1](https://github.com/lk-eg/Computationally-Efficient-SAM)]
+
 
 
 Teaching experiences 

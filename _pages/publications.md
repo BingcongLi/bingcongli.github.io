@@ -6,9 +6,12 @@ author_profile: true
 ---
 
 
-
 Conference Papers
 ------
+
+- **Implicit Regularization of Sharpness-Aware Minimization for Scale-Invariant Problems** <br>
+  *B.Li*, L. Zhang, N. He.  *NeurIPS 2024*  <br>
+  \[paper\]  \[code\]
 
 - **DPZero: Private Fine-Tuning of Language Models without Backpropagation** <br>
    L. Zhang, *B.Li*, K. K. Thekumparampil, S. Oh, N. He.  *ICML 2024*  <br>

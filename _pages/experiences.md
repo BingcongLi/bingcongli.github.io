@@ -25,20 +25,22 @@ Reviewer activities
 ----
 - NeurIPS 2021 - 2024
 - ICML 2021 - 2024
-- ICLR 2022 - 2024
-- AISTATS 2021 - 2023
-- AAAI 2021 
+- ICLR 2022 - 2025
+- AISTATS 2021 - 2023, 2025
+- AAAI 2021, 2025
 - IEEE GLOBECOM 2019, 2020
 - Transactions of Machine Learning Research (TMLR)
 - IEEE Transactions on Pattern Analysis and Machine Intelligence
 - IEEE Transactions on Neural Networks and Learning Systems
-- IEEE Transaction on Communications 
 - IEEE Transactions on Automatic Control
 - IEEE Journal on Selected Topics in Signal Processing
+- IEEE Transactions on Signal Processing
 - IEEE Journal on Selected Areas in Communications
+- IEEE Transaction on Communications 
+- IEEE Transactions on Mobile Computing
 - IEEE Transactions on Vehicular Technology
 - IEEE Signal Processing Letters
-- Machine learning
+- Machine Learning
 - Signal Processing (Elsevier)
 - Optimization Methods and Software
 - Computers & Security (Elsevier)
