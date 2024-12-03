@@ -23,7 +23,7 @@ I enjoy cycling 🚴🏻 and skiing 🎿 outside offices.
 
 Recent updates
 -----------
-- **10/2024.** [OPT2024] We prove that [initialization exponentially impact the convergence behavior of ScaledGD](https://arxiv.org/abs/2410.18965) on LoRA type problems (i.e., linear --> quadratic). 
+- **10/2024.** [OPT2024] We prove that [initialization exponentially impacts the convergence behavior of ScaledGD](https://arxiv.org/abs/2410.18965) on LoRA type problems (i.e., linear --> quadratic rates). 
 - **09/2024.** [NeurIPS 2024] We study the [implicit regularization of sharpness-aware minimization](https://arxiv.org/abs/2410.14802) (SAM) and explicify it to alleviate computational burdern of SAM. The resultant approach is useful for finetuning LLMs with LoRA.
 - **05/2024.** [ICML 2024] [Memory-efficient private finetuning for LLMs](https://arxiv.org/pdf/2310.09639). We also have [a paper](https://openreview.net/pdf?id=chI7jvNkwK) at Theoretical Foundations of Foundation Models (TF2M) workshop. 
 - **01/2024.** Start as a postdoc in ETH Zurich, working with Prof. Niao He. 
