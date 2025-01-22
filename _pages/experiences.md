@@ -17,14 +17,14 @@ Education
 Industry 
 ----
 <!-- - Research scientist, *****, AI lab, Shanghai, China, August 2022 - Dec 2023 -->
-- Applied scientist intern, Amazon Web Services (AWS) AI lab, East Palo Alto, CA, June 2021 - Dec 2021
+- Applied scientist intern, Amazon Web Services, AI lab, East Palo Alto, CA, June 2021 - Dec 2021
 - Digital signal processing intern, National Instruments, Shanghai, China, December 2016 - March 2017
 
 
 Reviewer activities
 ----
 - NeurIPS 2021 - 2024
-- ICML 2021 - 2024
+- ICML 2021 - 2025
 - ICLR 2022 - 2025
 - AISTATS 2021 - 2023, 2025
 - AAAI 2021, 2025
@@ -36,15 +36,17 @@ Reviewer activities
 - IEEE Journal on Selected Topics in Signal Processing
 - IEEE Journal on Selected Areas in Communications
 - IEEE Transaction on Communications 
+- IEEE Transactions on Cloud Computing
 - IEEE Transactions on Mobile Computing
 - IEEE Transactions on Vehicular Technology
 - IEEE Signal Processing Letters
 - Transactions of Machine Learning Research (TMLR)
 - Data-centric Machine Learning Research (DMLR)
 - Machine Learning
-- Signal Processing (Elsevier)
+- Signal Processing
+- Journal of Optimization Theory and Applications
 - Optimization Methods and Software
-- Computers & Security (Elsevier)
+- Computers & Security
 
 
 <!--Talks
