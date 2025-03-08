@@ -23,6 +23,7 @@ I enjoy cycling 🚴🏻 and skiing 🎿 outside offices.
 
 Recent updates
 -----------
+- **02/2025.** [New paper released] Transfer learning is provably benefitial for RLHF. Check our [paper](https://arxiv.org/abs/2502.19255v1)!
 - **01/2025.** [ICLR 2025] We prove that [initialization exponentially impacts the convergence behavior of ScaledGD](https://arxiv.org/abs/2410.18965) on LoRA type problems (i.e., linear --> quadratic rates). 
 - **12/2024.** Talked about Architecture-Aware Optimization at ELLIS UnConference.
 - **12/2024.** [ICASSP 2025] A new variant of SAM is released.

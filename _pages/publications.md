@@ -5,8 +5,13 @@ permalink: /publications/
 author_profile: true
 ---
 
-<!-- Preprints
------- -->
+-- Preprints
+------
+
+- **Can RLHF be More Efficient with Imperfect Reward Models? A Policy Coverage Perspective** <br>
+	Jiawei Huang, *Bingcong Li*, Christoph Dann, Niao He <br>
+	\[[paper](https://www.arxiv.org/abs/2502.19255)\] 
+
 
 
 Conference Papers
@@ -14,7 +19,7 @@ Conference Papers
 
 - **On the Crucial Role of Initialization for Matrix Factorization** <br>
     *Bingcong Li*, Liang Zhang, Aryan Mokhtari, Niao He.  *ICLR 2025*  <br>
-    \[[paper](https://arxiv.org/abs/2410.18965)\] 
+    \[[paper](https://arxiv.org/abs/2410.18965)\] \[[code](https://github.com/BingcongLi/NoRA)\]
 
 - **Implicit Regularization of Sharpness-Aware Minimization for Scale-Invariant Problems** <br>
     *Bingcong Li*, Liang Zhang, Niao He.  *NeurIPS 2024*  <br>
