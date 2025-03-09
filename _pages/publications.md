@@ -5,10 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
--- Preprints
+Preprints
 ------
 
-- **Can RLHF be More Efficient with Imperfect Reward Models? A Policy Coverage Perspective** <br>
+- **Can RLHF Be More Efficient with Imperfect Reward Models? A Policy Coverage Perspective** <br>
 	Jiawei Huang, *Bingcong Li*, Christoph Dann, Niao He <br>
 	\[[paper](https://www.arxiv.org/abs/2502.19255)\] 
 
