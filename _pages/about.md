@@ -20,12 +20,12 @@ General interests
 I enjoy cycling 🚴🏻 and skiing 🎿 outside offices.
 
 
-
 Recent updates
 -----------
-- **02/2025.** [Preprint] Transfer learning provably benefits RLHF. Check out our [paper](https://arxiv.org/abs/2502.19255v1)!
+- **04/2025.** Talked about "Fine-tuning LLMs cost-efficiently" at Peking University.
+- **02/2025.** [Preprint] Transfer learning provably benefits RLHF. Check out our [paper](https://arxiv.org/abs/2502.19255v1).
 - **01/2025.** [ICLR 2025] We prove that [initialization exponentially impacts the convergence behavior of ScaledGD](https://arxiv.org/abs/2410.18965) on LoRA type problems (i.e., linear --> quadratic rates). 
-- **12/2024.** Talked about Architecture-Aware Optimization at ELLIS UnConference.
+- **12/2024.** Talked about "Architecture-Aware Optimization" at ELLIS UnConference.
 - **12/2024.** [ICASSP 2025] A new variant of SAM is released.
 - **09/2024.** [NeurIPS 2024] We study the [implicit regularization of sharpness-aware minimization](https://arxiv.org/abs/2410.14802) (SAM) and explicify it to alleviate computational burdern of SAM. The resultant approach is useful for finetuning LLMs with LoRA.
 - **05/2024.** [ICML 2024] [Memory-efficient private finetuning for LLMs](https://arxiv.org/pdf/2310.09639). We also have [a paper](https://openreview.net/pdf?id=chI7jvNkwK) at Theoretical Foundations of Foundation Models (TF2M) workshop. 

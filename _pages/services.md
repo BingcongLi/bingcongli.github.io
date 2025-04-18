@@ -5,6 +5,17 @@ permalink: /services/
 author_profile: true
 ---
 
+Talks
+---
+
+- “Architecture-aware optimization for deep learning,” ELLIS UnConference, Bad Teinach, Germany, 12/2024
+- “LoRA surgery,” EPFL LIONS Lab, 04/2025
+- "Fine-tuning LLMs cost-efficiently," Peking University, 04/2025
+- “LoRA surgery,” [Efficient Machine Learning](https://sites.google.com/view/efficientml) Reading Group (online), 06/2025
+
+
+<!-- Riemannian gradient descent improves parameter-efficient fine-tuning -->
+<!-- EUROPT 2025 conference within the stream Zeroth and first-order optimization methods -->
 
 Reviewer activities
 ----
@@ -26,6 +37,7 @@ Reviewer activities
 - IEEE Transactions on Mobile Computing
 - IEEE Transactions on Vehicular Technology
 - IEEE Signal Processing Letters
+- Journal of Machine Learning Research (JMLR)
 - Transactions of Machine Learning Research (TMLR)
 - Data-centric Machine Learning Research (DMLR)
 - Machine Learning
