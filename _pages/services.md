@@ -8,10 +8,13 @@ author_profile: true
 Talks
 ---
 
-- “Architecture-aware optimization for deep learning,” ELLIS UnConference, Bad Teinach, Germany, 12/2024
-- “LoRA surgery,” EPFL LIONS Lab, 04/2025
-- "Fine-tuning LLMs cost-efficiently," Peking University, 04/2025
+- "Riemannian gradient descent improves parameter-efficient fine-tuning," EUROPT, Southampton, UK, 06/2025
 - “LoRA surgery,” [Efficient Machine Learning](https://sites.google.com/view/efficientml) Reading Group (online), 06/2025
+- "Fine-tuning LLMs cost-efficiently," Peking University, 04/2025
+- “LoRA surgery,” EPFL LIONS Lab, 04/2025
+- “Architecture-aware optimization for deep learning,” ELLIS UnConference, Bad Teinach, Germany, 12/2024
+
+
 
 
 <!-- Riemannian gradient descent improves parameter-efficient fine-tuning -->
@@ -19,7 +22,7 @@ Talks
 
 Reviewer activities
 ----
-- NeurIPS 2021 - 2024
+- NeurIPS 2021 - 2025
 - ICML 2021 - 2025
 - ICLR 2022 - 2025
 - AISTATS 2021 - 2023, 2025

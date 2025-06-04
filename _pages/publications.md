@@ -8,14 +8,26 @@ author_profile: true
 Preprints
 ------
 
-- **Can RLHF Be More Efficient with Imperfect Reward Models? A Policy Coverage Perspective** <br>
-	Jiawei Huang, *Bingcong Li*, Christoph Dann, Niao He <br>
-	\[[paper](https://www.arxiv.org/abs/2502.19255)\] 
+- **RefLoRA: Refactored Low-Rank Adaptation for Efficient Fine-Tuning of Large Models** <br>
+	Yilang Zhang, *Bingcong Li*, Georgios B. Giannakis.  <br>
+	\[[paper](https://arxiv.org/abs/2505.18877)\] 
+	
+- **PoLAR: Polar-Decomposed Low-Rank Adapter Representation** <br>
+	Kai Lion, Liang Zhang, *Bingcong Li*\*, Niao He\*. (\*equal supervision) <br>
+	\[[paper](https://arxiv.org/abs/2506.03133)\] \[[code](https://github.com/kcc-lion/polar)\]
+	
+<!-- - **Zeroth-Order Optimization Finds Flat Minima** <br>
+	Liang Zhang, *Bingcong Li*, Kiran K. Thekumparampil, Sewoong Oh, Michael Muehlebach, Niao He. <br>
+	\[[paper](https://www.arxiv.org/abs/2502.19255)\] -->
 
 
 
 Conference Papers
 ------
+
+- **Can RLHF Be More Efficient with Imperfect Reward Models? A Policy Coverage Perspective** <br>
+	Jiawei Huang, *Bingcong Li*, Christoph Dann, Niao He.  *ICML 2025* <br>
+	\[[paper](https://www.arxiv.org/abs/2502.19255)\] \[[code](https://github.com/jiaweihhuang/RLHF_RewardTransfer)\]
 
 - **On the Crucial Role of Initialization for Matrix Factorization** <br>
     *Bingcong Li*, Liang Zhang, Aryan Mokhtari, Niao He.  *ICLR 2025*  <br>

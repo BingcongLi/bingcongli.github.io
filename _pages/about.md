@@ -15,15 +15,21 @@ Welcome, it's a pleasure to connect with you! I'm Bingcong Li, a postdoctoral re
 General interests
 -----------
 
-**My research leverages optimization to further enhance the excitement surrounding deep learning.** My primary focus is to understand the optimization dynamics on neural networks and leverage these insights to design more efficient algorithms for pretraining and finetuning.
+<!-- **My research leverages optimization to further enhance the excitement surrounding deep learning.** My primary focus is to understand the optimization dynamics on neural networks and leverage these insights to design more efficient algorithms for pretraining, finetuning, and also inference. Generating the black-box optimization appraoches, I have been integrating the networks architecture considerations for faster convergence.  -->
+
+<!-- My research leverages optimization to deepen and expand the impact of deep learning. -->
+My primary focus is to understand the optimization dynamics of neural networks and use these insights to make **pretraining, fine-tuning, and inference of LLMs more efficient**. Unlike black-box approaches, my work incorporates **architectural characteristics**, such as attention and normalization layers, into the optimization process to accelerate convergence. By bridging theoretical foundations with practical algorithm design, I aim to advance the development of scalable, efficient, and reliable LLM systems. 
 
 I enjoy cycling 🚴🏻 and skiing 🎿 outside offices.
 
 
 Recent updates
 -----------
+- **06/2025.** I will talk about "LoRA sugery" at [Efficient Machine Learning Reading Group](https://sites.google.com/view/efficientml).
+- **06/2025.** [New paper] LoRA does not use allocated rank effectively. This can be addressed with PoLAR, a co-design of architecture and optimizer. Check out our [paper](https://arxiv.org/abs/2502.19255v1).
+- **06/2025.** [New paper] RefLoRA optimally rescales/refactorizes LoRA per training step to make fine-tuning LLMs faster. Check out our [paper](https://arxiv.org/abs/2502.19255v1).
+- **05/2025.** [ICML 2025] Transfer learning provably benefits RLHF. Check out our [paper](https://arxiv.org/abs/2502.19255v1).
 - **04/2025.** Talked about "Fine-tuning LLMs cost-efficiently" at Peking University.
-- **02/2025.** [Preprint] Transfer learning provably benefits RLHF. Check out our [paper](https://arxiv.org/abs/2502.19255v1).
 - **01/2025.** [ICLR 2025] We prove that [initialization exponentially impacts the convergence behavior of ScaledGD](https://arxiv.org/abs/2410.18965) on LoRA type problems (i.e., linear --> quadratic rates). 
 - **12/2024.** Talked about "Architecture-Aware Optimization" at ELLIS UnConference.
 - **12/2024.** [ICASSP 2025] A new variant of SAM is released.
