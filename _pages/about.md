@@ -26,9 +26,9 @@ I enjoy cycling 🚴🏻 and skiing 🎿 outside offices.
 Recent updates
 -----------
 - **06/2025.** I will talk about "LoRA sugery" at [Efficient Machine Learning Reading Group](https://sites.google.com/view/efficientml).
-- **06/2025.** [New paper] LoRA does not use allocated rank effectively. This can be addressed with PoLAR, a co-design of architecture and optimizer. Check out our [paper](https://arxiv.org/abs/2502.19255v1).
-- **06/2025.** [New paper] RefLoRA optimally rescales/refactorizes LoRA per training step to make fine-tuning LLMs faster. Check out our [paper](https://arxiv.org/abs/2502.19255v1).
-- **05/2025.** [ICML 2025] Transfer learning provably benefits RLHF. Check out our [paper](https://arxiv.org/abs/2502.19255v1).
+- **06/2025.** [New paper] LoRA does not use allocated rank effectively. This can be addressed with PoLAR, a co-design of architecture and optimizer. Check out our [paper]((https://arxiv.org/abs/2506.03133).
+- **06/2025.** [New paper] RefLoRA optimally rescales/refactorizes LoRA per training step to make fine-tuning LLMs faster. Check out our [paper](https://arxiv.org/abs/2505.18877).
+- **05/2025.** [ICML 2025] Transfer learning provably benefits RLHF. Check out our [paper](https://arxiv.org/abs/2502.19255v3).
 - **04/2025.** Talked about "Fine-tuning LLMs cost-efficiently" at Peking University.
 - **01/2025.** [ICLR 2025] We prove that [initialization exponentially impacts the convergence behavior of ScaledGD](https://arxiv.org/abs/2410.18965) on LoRA type problems (i.e., linear --> quadratic rates). 
 - **12/2024.** Talked about "Architecture-Aware Optimization" at ELLIS UnConference.
