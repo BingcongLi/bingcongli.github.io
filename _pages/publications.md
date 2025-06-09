@@ -16,9 +16,9 @@ Preprints
 	Kai Lion, Liang Zhang, *Bingcong Li*\*, Niao He\*. (\*equal supervision) <br>
 	\[[paper](https://arxiv.org/abs/2506.03133)\] \[[code](https://github.com/kcc-lion/polar)\]
 	
-<!-- - **Zeroth-Order Optimization Finds Flat Minima** <br>
+- **Zeroth-Order Optimization Finds Flat Minima** <br>
 	Liang Zhang, *Bingcong Li*, Kiran K. Thekumparampil, Sewoong Oh, Michael Muehlebach, Niao He. <br>
-	\[[paper](https://www.arxiv.org/abs/2502.19255)\] -->
+	\[[paper](https://arxiv.org/abs/2506.05454)\]
 
 
 
