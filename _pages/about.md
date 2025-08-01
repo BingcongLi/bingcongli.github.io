@@ -15,12 +15,17 @@ Welcome, it's a pleasure to connect with you! I'm Bingcong Li, a postdoctoral re
 General interests
 -----------
 
-<!-- **My research leverages optimization to further enhance the excitement surrounding deep learning.** My primary focus is to understand the optimization dynamics on neural networks and leverage these insights to design more efficient algorithms for pretraining, finetuning, and also inference. Generating the black-box optimization appraoches, I have been integrating the networks architecture considerations for faster convergence.  -->
-
 <!-- My research leverages optimization to deepen and expand the impact of deep learning. -->
-My primary focus is to understand the optimization dynamics of neural networks and use these insights to make **pretraining, fine-tuning, and inference of LLMs more efficient**. Unlike black-box approaches, my work incorporates **architectural characteristics**, such as attention and normalization layers, into the optimization process to accelerate convergence. By bridging theoretical foundations with practical algorithm design, I aim to advance the development of scalable, efficient, and reliable LLM systems. 
+<!-- My primary focus is to understand the optimization dynamics of neural networks and use these insights to make **pretraining, fine-tuning, and inference of LLMs more efficient**. Unlike black-box approaches, my work incorporates **architectural characteristics**, such as attention and normalization layers, into the optimization process to accelerate convergence. By bridging theoretical foundations with practical algorithm design, I aim to advance the development of scalable, efficient, and reliable LLM systems.  -->
 
-I enjoy cycling 🚴🏻 and skiing 🎿 outside offices.
+I make computation more efficient and accessible in the era of LLMs. Modern computing exhibits distinct patterns across domains. I use **optimization** as a unifiying framework to enhance computational efficiency at every level of granularity.
+
+- **Architecutres**: We build cmputational efficient pretraining and finetuning pipelines through a co-design of architecture and optimizer, keeping the gains largely explainable.
+- **System management**: When training piplelines are fixed, we maximize cluster throughput with better parallelism and optimal resource allocation, ensuring every FLOP counts.
+- **Personalization**: We develop memory-efficient optimization so that users with consumer-grade GPUs can harness the power of reasonably large models.
+
+
+I enjoy cycling 🚴🏻 outside offices. I also do a bit gym training, but ocationally people tell me my triceps pushdown techniques could use some work.
 
 
 Recent updates

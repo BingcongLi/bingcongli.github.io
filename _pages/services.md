@@ -16,10 +16,6 @@ Talks
 
 
 
-
-<!-- Riemannian gradient descent improves parameter-efficient fine-tuning -->
-<!-- EUROPT 2025 conference within the stream Zeroth and first-order optimization methods -->
-
 Reviewer activities
 ----
 - NeurIPS 2021 - 2025
