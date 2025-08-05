@@ -49,12 +49,20 @@ Reviewer activities
 
 Student projects supervision
 ----
-We do have projects for ETH master and bachelor students. The lastest ones can be found in [ODI student projects](https://odi.inf.ethz.ch/ThesisProjects).
+We do have projects for ETH master and bachelor students. 
+The lastest ones can be found in [ODI student projects](https://odi.inf.ethz.ch/ThesisProjects).
+If you are interested in optimization and the theoretical foundations of deep learning, feel free to get in touch.
+Below are past projects I (co-)supervised that are published or under submission at conferences and workshops:
 
-Here are some github projects from supervised theses. 
+**Bachelor projects**
+- Memory efficient LLM fine-tuning with [[ConMeZO](https://github.com/lk-eg/Computationally-Efficient-SAM)]
 
-[[Example 1](https://github.com/lk-eg/Computationally-Efficient-SAM)]
+**Master's projects**
+- In preparation for some conferences. Details to be released soon.
 
+**PhD projects**
+- Improved optimization for LLM fine-tuning with [[RefLoRA](https://arxiv.org/abs/2505.18877)]
+- LLM fine-tuning with [[PoLAR](https://arxiv.org/abs/2506.03133)]
 
 
 Teaching experiences 
