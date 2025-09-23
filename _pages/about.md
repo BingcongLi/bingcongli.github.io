@@ -30,12 +30,15 @@ I enjoy cycling 🚴🏻 outside offices. I also do a bit gym training, but ocat
 
 Recent updates
 -----------
+- **10/2025.** I will give a talk at [AI Seminars](https://engineering.oregonstate.edu/EECS/research/AI-seminars) in Oregon State University.
 - **10/2025.** We are hosting the Efficient LLMs Fine-tuning (ELF) Track in [AI+X summit](https://www.plusx.ai/). See you in October, Zurich!
+- **09/2025.** I will talk about the power of weight normalization for fine-tuning LLMs in [Quantitative Methods and Learning Research Seminar](https://www.unisg.ch/en/university/schools/school-of-economics-and-poltical-science-seps-hsg/research/quantitative-methods-and-learning/).
+- **09/2025.** Three papers are accepted to NeurIPS 2025:
+	- LoRA does not use allocated rank effectively. Address it with [PoLAR](https://arxiv.org/abs/2506.03133).
+	- Handling symmetries for faster fine-tuning of LLMs with [RefLoRA](https://arxiv.org/abs/2505.18877).
+	- Zeroth-order methods provably find flat minima. Check it out [here](https://arxiv.org/pdf/2506.05454).
 - **07/2025.** I will talk about Riemannian optimization and its provable merits for fine-tuning LLMs in EUROPT 2025.
 - **06/2025.** I will talk about "LoRA sugery" at [Efficient Machine Learning Reading Group](https://sites.google.com/view/efficientml).
-- **06/2025.** [New paper] LoRA does not use allocated rank effectively. This can be addressed with PoLAR, a co-design of architecture and optimizer. Check out our [paper](https://arxiv.org/abs/2506.03133).
-- **06/2025.** [New paper] RefLoRA optimally rescales/refactorizes LoRA per training step to make fine-tuning LLMs faster. Check out our [paper](https://arxiv.org/abs/2505.18877).
-- **06/2025.** [New paper] Zeroth-order methods provably find flat minima. Check it out [here](https://arxiv.org/pdf/2506.05454).
 - **05/2025.** [ICML 2025] Transfer learning provably benefits RLHF. Check out our [paper](https://arxiv.org/abs/2502.19255v3).
 - **04/2025.** Talked about "Fine-tuning LLMs cost-efficiently" at Peking University.
 - **01/2025.** [ICLR 2025] We prove that [initialization exponentially impacts the convergence behavior of ScaledGD](https://arxiv.org/abs/2410.18965) on LoRA type problems (i.e., linear --> quadratic rates). 
