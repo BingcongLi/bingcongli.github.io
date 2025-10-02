@@ -16,7 +16,6 @@ Education
 
 Industry 
 ----
-<!-- - Research scientist, *****, AI lab, Shanghai, China, August 2022 - Dec 2023 -->
 - Applied scientist intern, Amazon Web Services, AI lab, East Palo Alto, CA, June 2021 - Dec 2021
 
 

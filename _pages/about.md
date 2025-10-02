@@ -31,6 +31,7 @@ I enjoy cycling 🚴🏻 outside offices. I also do a bit gym training, but ocat
 Recent updates
 -----------
 - **10/2025.** I will give a talk at [AI Seminars](https://engineering.oregonstate.edu/EECS/research/AI-seminars) in Oregon State University.
+- **10/2025.** [New paper] Stiefel manifolds, used in a general form of weight normalization, turn over-parameterization from a challenge into an advantage, provably. Check it [here](https://arxiv.org/pdf/2510.01175).
 - **10/2025.** We are hosting the Efficient LLMs Fine-tuning (ELF) Track in [AI+X summit](https://www.plusx.ai/). See you in October, Zurich!
 - **09/2025.** I will talk about the power of weight normalization for fine-tuning LLMs in [Quantitative Methods and Learning Research Seminar](https://www.unisg.ch/en/university/schools/school-of-economics-and-poltical-science-seps-hsg/research/quantitative-methods-and-learning/).
 - **09/2025.** Three papers are accepted to NeurIPS 2025:

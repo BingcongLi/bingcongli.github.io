@@ -5,8 +5,13 @@ permalink: /publications/
 author_profile: true
 ---
 
-<!-- Preprints
------- -->
+Preprints
+------
+
+- **On the Benefits of Weight Normalization for Overparameterized Matrix Sensing** <br>
+	Yudong Wei, Liang Zhang, *Bingcong Li*\*, Niao He\*. (\*equal supervision). <br>
+	\[[paper](https://arxiv.org/pdf/2510.01175)\]
+	
 
 
 

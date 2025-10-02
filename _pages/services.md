@@ -7,7 +7,8 @@ author_profile: true
 
 Talks
 ---
-
+- "Provable benefits of weight normalization and its application to fine-tuning LLMs.'' AI Seminars, Oregon State University, 10.2025.
+- "Provable benefits of weight normalization and its application to fine-tuning LLMs.'' Quantitative Methods and Learning Research Seminar, University of St Gallen, 09.2025.
 - "Riemannian gradient descent improves parameter-efficient fine-tuning," EUROPT, Southampton, UK, 06/2025
 - “LoRA surgery,” [Efficient Machine Learning](https://sites.google.com/view/efficientml) Reading Group (online), 06/2025
 - "Fine-tuning LLMs cost-efficiently," Peking University, 04/2025
@@ -58,7 +59,7 @@ Below are past projects I (co-)supervised that are published or under submission
 - Memory efficient LLM fine-tuning with [[ConMeZO](https://github.com/lk-eg/Computationally-Efficient-SAM)]
 
 **Master's projects**
-- In preparation for some conferences. Details to be released soon.
+- Provable benefits of weight normalization. Check the paper [[here](https://arxiv.org/pdf/2510.01175)]
 
 **PhD projects**
 - Improved optimization for LLM fine-tuning with [[RefLoRA](https://arxiv.org/abs/2505.18877)]
