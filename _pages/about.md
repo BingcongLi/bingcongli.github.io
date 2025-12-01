@@ -15,10 +15,8 @@ Welcome, it's a pleasure to connect with you! I'm Bingcong Li, a postdoctoral re
 General interests
 -----------
 
-
 Computation is at the heart of modern AI and the invisible engine behind the success of LLMs.
 The overarching goal of my research is to **make computation in the era of LLMs efficient, accessible, and affordable across heterogeneous resources**, from clusters with thousands of GPUs to users with consumer-grade hardware. My research draws on interdisciplinary tools from *deep learning*, *optimization*, and *signal processing* to tackle challenges across multiple scales of computation. At every stage, I develop theoretically grounded methods so that the resulting systems are more explainable. I focus on three questions:
-
 
 - **Foundations of computing**: Which architectures and training strategies deliver the best accuracy and efficiency?
 - **Scaling computation up**: How do we sustain throughput, reliability, and cost efficiency at the scale of thousands of GPUs?
@@ -30,6 +28,8 @@ I enjoy cycling 🚴🏻 outside offices. I also do a bit gym training, but ocat
 
 Recent updates
 -----------
+- **12/2025.** I will be at NeurIPS 2025, happy to talk!
+- **10/2025.** A simplified version of [our result](https://arxiv.org/abs/2506.03133) is intergrated into ETH ODS course. 
 - **10/2025.** I will give a talk at [AI Seminars](https://engineering.oregonstate.edu/EECS/research/AI-seminars) in Oregon State University.
 - **10/2025.** [New paper] Stiefel manifolds, used in a general form of weight normalization, turn over-parameterization from a challenge into an advantage, provably. Check it [here](https://arxiv.org/pdf/2510.01175).
 - **10/2025.** We are hosting the Efficient LLMs Fine-tuning (ELF) Track in [AI+X summit](https://www.plusx.ai/). See you in October, Zurich!

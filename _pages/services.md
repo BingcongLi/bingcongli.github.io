@@ -52,11 +52,11 @@ Student projects supervision
 ----
 We do have projects for ETH master and bachelor students. 
 The lastest ones can be found in [ODI student projects](https://odi.inf.ethz.ch/ThesisProjects).
-If you are interested in optimization and the theoretical foundations of deep learning, feel free to get in touch.
+If you are interested the theoretical foundations of deep learning, feel free to get in touch.
 Below are past projects I (co-)supervised that are published or under submission at conferences and workshops:
 
 **Bachelor projects**
-- Memory efficient LLM fine-tuning with [[ConMeZO](https://github.com/lk-eg/Computationally-Efficient-SAM)]
+- Memory efficient LLM fine-tuning with [[ConMeZO](https://arxiv.org/abs/2511.02757)]
 
 **Master's projects**
 - Provable benefits of weight normalization. Check the paper [[here](https://arxiv.org/pdf/2510.01175)]
@@ -68,6 +68,7 @@ Below are past projects I (co-)supervised that are published or under submission
 
 Teaching experiences 
 ----
+- A simplified version of [our result](https://arxiv.org/abs/2506.03133) is intergrated into ETH ODS course. 
 - TA for FoRL (Foundations of Reinforcement Learning), ETHZ, Spring 2024
 - TA for EE 3025 Statistical Methods in ECE, UMN, Spring 2021
 
