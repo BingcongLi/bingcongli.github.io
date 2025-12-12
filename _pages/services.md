@@ -7,6 +7,8 @@ author_profile: true
 
 Talks
 ---
+- "Scaling large efficiently for LLMs" in University of Minnesota, Twin Cities, hosted by Mingyi Hong, 12.2025.
+- "Scaling large efficiently for LLMs" in UC Irvine, Department of EECS, 12.2025.
 - "Provable benefits of weight normalization and its application to fine-tuning LLMs.'' AI Seminars, Oregon State University, 10.2025.
 - "Provable benefits of weight normalization and its application to fine-tuning LLMs.'' Quantitative Methods and Learning Research Seminar, University of St Gallen, 09.2025.
 - "Riemannian gradient descent improves parameter-efficient fine-tuning," EUROPT, Southampton, UK, 06/2025

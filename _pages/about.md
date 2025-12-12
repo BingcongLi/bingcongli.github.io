@@ -28,7 +28,8 @@ I enjoy cycling 🚴🏻 outside offices. I also do a bit gym training, but ocat
 
 Recent updates
 -----------
-- **12/2025.** I will be at NeurIPS 2025, happy to talk!
+- **12/2025.** Talked about "Scaling large efficiently for LLMs" in UC Irvine, and University of Minnesota, Twin Cities.
+- **12/2025.** I will be at NeurIPS 2025 in San Diego, happy to talk!
 - **10/2025.** A simplified version of [our result](https://arxiv.org/abs/2506.03133) is intergrated into ETH ODS course. 
 - **10/2025.** I will give a talk at [AI Seminars](https://engineering.oregonstate.edu/EECS/research/AI-seminars) in Oregon State University.
 - **10/2025.** [New paper] Stiefel manifolds, used in a general form of weight normalization, turn over-parameterization from a challenge into an advantage, provably. Check it [here](https://arxiv.org/pdf/2510.01175).
