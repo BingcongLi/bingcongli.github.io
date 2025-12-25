@@ -28,6 +28,7 @@ I enjoy cycling 🚴🏻 outside offices. I also do a bit gym training, but ocat
 
 Recent updates
 -----------
+- **12/2025.** A 3-hour tutorial "Low-Rank Adaptation Redux in Large Models" has been accepted at ICASSP 2026. See you in Barcelona, Spain!
 - **12/2025.** Talked about "Scaling large efficiently for LLMs" in UC Irvine, and University of Minnesota, Twin Cities.
 - **12/2025.** I will be at NeurIPS 2025 in San Diego, happy to talk!
 - **10/2025.** A simplified version of [our result](https://arxiv.org/abs/2506.03133) is intergrated into ETH ODS course. 

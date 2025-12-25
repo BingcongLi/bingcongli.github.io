@@ -7,6 +7,7 @@ author_profile: true
 
 Talks
 ---
+- Tutorial at ICASSP 2026: "Low-Rank Adaptation Redux in Large Models", Barcelona, Spain, 05/2026.
 - "Scaling large efficiently for LLMs" in University of Minnesota, Twin Cities, hosted by Mingyi Hong, 12.2025.
 - "Scaling large efficiently for LLMs" in UC Irvine, Department of EECS, 12.2025.
 - "Provable benefits of weight normalization and its application to fine-tuning LLMs.'' AI Seminars, Oregon State University, 10.2025.
@@ -64,7 +65,7 @@ Below are past projects I (co-)supervised that are published or under submission
 - Provable benefits of weight normalization. Check the paper [[here](https://arxiv.org/pdf/2510.01175)]
 
 **PhD projects**
-- Improved optimization for LLM fine-tuning with [[RefLoRA](https://arxiv.org/abs/2505.18877)]
+- Handling architectural symmetries in LLM fine-tuning via [[RefLoRA](https://arxiv.org/abs/2505.18877)]
 - LLM fine-tuning with [[PoLAR](https://arxiv.org/abs/2506.03133)]
 
 
