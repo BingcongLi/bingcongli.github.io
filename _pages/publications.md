@@ -5,18 +5,28 @@ permalink: /publications/
 author_profile: true
 ---
 
-Preprints
-------
+<!-- Preprints
+------ -->
 
-- **On the Benefits of Weight Normalization for Overparameterized Matrix Sensing** <br>
-	Yudong Wei, Liang Zhang, *Bingcong Li*\*, Niao He\*. (\*equal supervision). <br>
-	\[[paper](https://arxiv.org/pdf/2510.01175)\]
-	
+
 
 
 
 Conference Papers
 ------
+- **On the Benefits of Weight Normalization for Overparameterized Matrix Sensing** <br>
+	Yudong Wei, Liang Zhang, *Bingcong Li*\*, Niao He\*. (\*equal supervision). *ICLR 2026* <br>
+	\[[paper](https://arxiv.org/pdf/2510.01175)\]
+	
+	
+- **Binomial Gradient-Based Meta-Learning for Enhanced Meta-Gradient Estimation** <br>
+	Yilang Zhang, Abraham Jaeger Mountain, *Bingcong Li*, Georgios B. Giannakis *ICLR 2026* <br>
+	
+
+- **ConMeZO: Adaptive Descent-Direction Sampling for Gradient-Free Finetuning of Large Language Models** <br>
+	Lejs Deen Behric, Liang Zhang, *Bingcong Li*, Kiran Koshy Thekumparampil. *AISTATS 2026* <br>
+	\[[paper](https://arxiv.org/abs/2511.02757)\]
+
 
 - **PoLAR: Polar-Decomposed Low-Rank Adapter Representation** <br>
 	Kai Lion, Liang Zhang, *Bingcong Li*\*, Niao He\*. (\*equal supervision). *NeurIPS 2025* <br>

@@ -28,6 +28,8 @@ I enjoy cycling 🚴🏻 outside offices. I also do a bit gym training, but ocat
 
 Recent updates
 -----------
+- **01/2026.** Two papers are accepted to ICLR 2026.
+- **01/2026.** One paper on memory efficient LLM fine-tuning with [ConMeZO](https://arxiv.org/abs/2511.02757) is accepted to AISTATS 2026.
 - **12/2025.** A 3-hour tutorial "Low-Rank Adaptation Redux in Large Models" has been accepted at ICASSP 2026. See you in Barcelona, Spain!
 - **12/2025.** Talked about "Scaling large efficiently for LLMs" in UC Irvine, and University of Minnesota, Twin Cities.
 - **12/2025.** I will be at NeurIPS 2025 in San Diego, happy to talk!

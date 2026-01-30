@@ -23,8 +23,8 @@ Talks
 Reviewer activities
 ----
 - NeurIPS 2021 - 2025
-- ICML 2021 - 2025
-- ICLR 2022 - 2025
+- ICML 2021 - 2026
+- ICLR 2022 - 2026
 - AISTATS 2021 - 2023, 2025
 - AAAI 2021, 2025
 - IEEE GLOBECOM 2019, 2020
@@ -59,14 +59,14 @@ If you are interested the theoretical foundations of deep learning, feel free to
 Below are past projects I (co-)supervised that are published or under submission at conferences and workshops:
 
 **Bachelor projects**
-- Memory efficient LLM fine-tuning with [[ConMeZO](https://arxiv.org/abs/2511.02757)]
+- Memory efficient LLM fine-tuning with [[ConMeZO](https://arxiv.org/abs/2511.02757)] at AISTATS 2026.
 
 **Master's projects**
-- Provable benefits of weight normalization. Check the paper [[here](https://arxiv.org/pdf/2510.01175)]
+- Provable benefits of weight normalization. Check the ICLR 2026 [[paper](https://arxiv.org/pdf/2510.01175)].
 
 **PhD projects**
-- Handling architectural symmetries in LLM fine-tuning via [[RefLoRA](https://arxiv.org/abs/2505.18877)]
-- LLM fine-tuning with [[PoLAR](https://arxiv.org/abs/2506.03133)]
+- Handling architectural symmetries in LLM fine-tuning via [[RefLoRA](https://arxiv.org/abs/2505.18877)] at NeurIPS 2025.
+- LLM fine-tuning with [[PoLAR](https://arxiv.org/abs/2506.03133)] at NeurIPS 2025.
 
 
 Teaching experiences 
