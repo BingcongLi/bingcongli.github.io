@@ -21,6 +21,7 @@ Conference Papers
 	
 - **Binomial Gradient-Based Meta-Learning for Enhanced Meta-Gradient Estimation** <br>
 	Yilang Zhang, Abraham Jaeger Mountain, *Bingcong Li*, Georgios B. Giannakis *ICLR 2026* <br>
+	\[[paper](https://openreview.net/pdf?id=mKgUAO41zf)\]
 	
 
 - **ConMeZO: Adaptive Descent-Direction Sampling for Gradient-Free Finetuning of Large Language Models** <br>
