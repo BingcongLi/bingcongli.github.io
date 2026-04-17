@@ -5,11 +5,16 @@ permalink: /publications/
 author_profile: true
 ---
 
-<!-- Preprints
------- -->
+Preprints
+------
 
+- **Zeroth-Order Optimization at the Edge of Stability** <br>
+	Minhak Song, Liang Zhang, *Bingcong Li*, Niao He, Michael Muehlebach, Sewoong Oh *NeurIPS 2025* <br>
+	\[[paper](https://arxiv.org/pdf/2604.14669)\]
 
-
+- **Adaptive Test-Time Compute Allocation for Reasoning LLMs via Constrained Policy Optimization** <br>
+	Zhiyuan Zhai, *Bingcong Li*, Bingnan Xiao, Ming Li, Xin Wang <br>
+	\[[paper](https://arxiv.org/pdf/2604.14853)\]
 
 
 Conference Papers
