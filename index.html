@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bingcong Li</title>
+  <link rel="icon" type="image/png" href="content/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <!-- marked.js: converts markdown → HTML in the browser -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --font:         'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-display: 'EB Garamond', Georgia, serif;
+      --text:         #1a1a1a;
+      --muted:        #555;
+      --light:        #999;
+      --border:       #e8e8e8;
+      --border-dark:  #d0d0d0;
+      --link:         #2756a6;
+      --accent:       #7b0d0d;
+    }
+
+    html { font-size: 17px; scroll-behavior: smooth; }
+    body { background: #fff; color: var(--text); font-family: var(--font); font-weight: 300; line-height: 1.7; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Layout ── */
+    .page { display: flex; min-height: 100vh; max-width: 1120px; margin: 0 auto; }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 252px; flex-shrink: 0;
+      padding: 3rem 1.8rem 3rem 2.2rem;
+      position: sticky; top: 0; height: 100vh; overflow-y: auto;
+      border-right: 1px solid var(--border);
+      background: #fafafa;
+      display: flex; flex-direction: column;
+    }
+
+    .sidebar-photo {
+      width: 120px; height: 120px; border-radius: 50%;
+      background: #e4e4e4;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 2.2rem; font-weight: 400;
+      color: #aaa; margin-bottom: 1.5rem; overflow: hidden;
+      box-shadow: 0 0 0 4px #fff, 0 0 0 5px var(--border);
+    }
+    .sidebar-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+    .sidebar-name {
+      font-family: var(--font-display);
+      font-size: 1.55rem; font-weight: 500;
+      line-height: 1.2; margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+    .sidebar-title {
+      font-size: 0.8rem; color: var(--muted);
+      line-height: 1.7; margin-bottom: 1.2rem;
+    }
+    .sidebar-contact {
+      font-family: monospace;
+      font-size: 0.72rem; color: var(--muted);
+      margin-bottom: 1.6rem; line-height: 2.1;
+    }
+    .sidebar-contact a { color: var(--link); }
+
+    hr.divider { border: none; border-top: 1px solid var(--border); margin: 0 0 1.4rem; }
+
+    .sidebar-nav { list-style: none; display: flex; flex-direction: column; }
+    .sidebar-nav a {
+      display: block; font-size: 0.85rem; color: var(--muted);
+      padding: 0.32rem 0; text-decoration: none;
+      letter-spacing: 0.01em; transition: color 0.15s;
+      border-left: 2px solid transparent;
+      padding-left: 0.6rem; margin-left: -0.6rem;
+    }
+    .sidebar-nav a:hover { color: var(--text); }
+    .sidebar-nav a.active {
+      color: var(--accent); font-weight: 400;
+      border-left-color: var(--accent);
+    }
+
+    /* ── Main header: identity + tabs ── */
+    .main-header {
+      display: flex;
+      align-items: flex-end;
+      gap: 1.5rem;
+      margin-bottom: 0;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .header-identity {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding-bottom: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .header-photo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+
+    .header-logo {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      opacity: 0.85;
+    }
+
+    /* Tab nav sits flush at the bottom of the header */
+    .tab-nav {
+      display: flex;
+      align-items: flex-end;
+      border-bottom: none;   /* border is on .main-header now */
+      margin-bottom: 0;
+      flex: 1;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn-link {
+      font-family: var(--font);
+      font-size: 0.82rem; font-weight: 400;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      color: var(--light);
+      padding: 0.7rem 1.2rem 0.65rem;
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.18s;
+    }
+    .tab-btn-link:hover { color: var(--link); text-decoration: none; }
+
+    /* Panel spacing now handled by main-header bottom border */
+    .tab-panel { margin-top: 2.5rem; }
+
+    /* ── Main ── */
+    .main { flex: 1; padding: 3rem 3.5rem 6rem; min-width: 0; }
+
+    /* ── Tab button styles ── */
+    .tab-nav button {
+      font-family: var(--font); font-size: 0.75rem; font-weight: 400;
+      color: var(--light); background: none; border: none;
+      border-bottom: 2px solid transparent; margin-bottom: -1px;
+      padding: 0.7rem 0.75rem 0.65rem; cursor: pointer;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      transition: color 0.18s;
+      white-space: nowrap;
+    }
+    .tab-nav button:hover { color: var(--text); }
+    .tab-nav button.active {
+      color: var(--text); font-weight: 600;
+      border-bottom-color: var(--text);
+    }
+
+    /* ── Panels ── */
+    .tab-panel { display: none; animation: fadeIn 0.18s ease; }
+    .tab-panel.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+    .loading { color: var(--light); font-size: 0.88rem; padding: 1rem 0; }
+
+    /* ── Markdown body ── */
+
+    /* h1: section title (e.g. "About", "Publications") */
+    .md-body h1 {
+      font-family: var(--font-display);
+      font-size: 2rem; font-weight: 400;
+      letter-spacing: -0.02em; line-height: 1.1;
+      margin-bottom: 1.6rem; margin-top: 0;
+      color: var(--text);
+    }
+
+    /* h2: group headers (e.g. "Conference Papers", "Education") */
+    .md-body h2 {
+      font-family: var(--font);
+      font-size: 0.68rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.18em;
+      color: var(--light);
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-dark);
+      max-width: 720px;
+    }
+
+    /* h3: sub-group headers (mentoring tiers) */
+    .md-body h3 {
+      font-family: var(--font);
+      font-size: 0.68rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.16em;
+      color: var(--light); margin: 2rem 0 0.7rem;
+    }
+
+    .md-body p {
+      font-size: 1rem; margin-bottom: 0.9rem;
+      line-height: 1.8; max-width: 660px;
+    }
+    .md-body p:last-child { margin-bottom: 0; }
+    .md-body a { color: var(--link); }
+    .md-body strong { font-weight: 600; }
+    .md-body em { font-style: italic; }
+
+    /* Research thrust list — bullet instead of bar */
+    .md-body ul { list-style: none; padding: 0; margin: 0.8rem 0 1.2rem; }
+    .md-body ul li {
+      font-size: 1rem; padding: 0.45rem 0 0.45rem 1.4rem;
+      position: relative; line-height: 1.6; color: var(--text);
+      margin-bottom: 0;
+    }
+    .md-body ul li::before {
+      content: '•';
+      position: absolute; left: 0;
+      color: var(--light); font-size: 1rem;
+    }
+
+    /* Tables */
+    .md-body table {
+      width: 100%; border-collapse: collapse;
+      font-size: 1rem; margin-bottom: 1.2rem;
+      max-width: 720px;
+    }
+    .md-body thead tr { border-bottom: 1.5px solid var(--border-dark); }
+    .md-body th {
+      font-weight: 600; padding: 0.4rem 1rem 0.4rem 0;
+      text-align: left; font-size: 0.75rem;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--light);
+    }
+    .md-body td {
+      padding: 0.65rem 1rem 0.65rem 0;
+      vertical-align: top; line-height: 1.6;
+    }
+    .md-body tbody tr:nth-child(even) td { background: #fafafa; }
+
+    /* ── News section ── */
+    .news-section { margin-top: 2.8rem; max-width: 720px; }
+    .news-heading { display: none; }
+
+    /* ── Sub-tabs (inside About) ── */
+    .sub-tab-nav {
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid var(--border-dark);
+      margin-bottom: 1.8rem;
+    }
+    .sub-tab-btn {
+      font-family: var(--font);
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.13em; text-transform: uppercase;
+      color: var(--light); background: none;
+      border: 1px solid transparent;
+      border-bottom: none;
+      margin-bottom: -1px;
+      padding: 0.5rem 1.4rem;
+      cursor: pointer; transition: color 0.15s;
+      white-space: nowrap;
+    }
+    .sub-tab-btn:hover { color: var(--text); }
+    .sub-tab-btn.active {
+      color: var(--text);
+      border-color: var(--border-dark);
+      border-bottom-color: #fff;
+      background: #fff;
+    }
+
+    .sub-panel { display: none; animation: fadeIn 0.15s ease; }
+    .sub-panel.active { display: block; }
+
+    /* Hide h1 headings inside news panels (from markdown # headings) */
+    .news-body h1 { display: none; }
+
+    /* News list */
+    .news-body { max-width: 680px; }
+    .news-body ul { list-style: none; padding: 0; margin: 0; }
+    .news-body ul li {
+      font-size: 1rem; line-height: 1.8;
+      padding: 0.5rem 0 0.5rem 1.4rem;
+      position: relative;
+      color: var(--text);
+    }
+    .news-body ul li::before {
+      content: '•';
+      position: absolute; left: 0;
+      color: var(--light);
+      font-size: 1rem;
+    }
+    .news-body ul li a { color: var(--link); }
+    .news-date { font-weight: 600; }
+    .md-body .entry-block p {
+      max-width: 660px;
+      padding: 0.9rem 0;
+      margin-bottom: 0;
+      line-height: 1.65;
+    }
+
+    /* ── Publication blocks ── */
+    .md-body hr { border: none; margin: 0; }
+
+    .pub-block {
+      padding: 1.25rem 0;
+      max-width: 720px;
+    }
+
+    .pub-block .pub-title {
+      font-family: var(--font-display);
+      font-size: 1rem; font-weight: 500;
+      line-height: 1.4; display: block;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.01em;
+    }
+    .pub-block .pub-authors {
+      font-size: 0.9rem; color: var(--muted);
+      display: block; margin-bottom: 0.18rem; line-height: 1.6;
+    }
+    .pub-block .pub-venue {
+      font-size: 0.9rem; font-style: italic;
+      color: var(--muted); display: block;
+      margin-bottom: 0.6rem; line-height: 1.6;
+    }
+    .pub-block .pub-venue b { font-style: normal; font-weight: 600; color: var(--text); }
+    .pub-block .pub-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+    .pub-btn {
+      font-family: var(--font); font-size: 0.78rem; font-weight: 400;
+      color: var(--muted); border: 1px solid var(--border-dark);
+      border-radius: 20px; padding: 3px 16px;
+      text-decoration: none; background: transparent;
+      display: inline-block; transition: all 0.18s;
+      letter-spacing: 0.02em;
+    }
+    .pub-btn:hover {
+      border-color: var(--accent); color: var(--accent);
+      background: #fdf5f5; text-decoration: none;
+    }
+
+    /* ── Footer ── */
+    .page-footer {
+      margin-top: 4rem; padding-top: 1.2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--light);
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 760px) {
+      .page { flex-direction: column; }
+      .sidebar { position: static; width: 100%; height: auto; border-right: none; border-bottom: 1px solid var(--border); padding: 1.5rem; background: #fff; }
+      .main { padding: 1.5rem 1.5rem 4rem; }
+      .tab-nav { overflow-x: auto; }
+      .md-body table { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ══════ SIDEBAR ══════ -->
+  <!-- Edit name, title, contact info directly here -->
+  <aside class="sidebar">
+    <div class="sidebar-photo">
+      <img src="content/photo.png" alt="Bingcong Li">
+    </div>
+    <div class="sidebar-name">Bingcong Li</div>
+    <div class="sidebar-title">
+      Postdoctoral Researcher<br>
+      Dept. of Computer Science<br>
+      ETH Zürich
+    </div>
+    <div class="sidebar-contact">
+      <a href="mailto:bingcong.li@inf.ethz.ch">bingcong.li[@]inf.ethz.ch</a><br>
+      <a href="mailto:bingtsongli@gmail.com">bingtsongli[@]gmail.com</a><br>
+      <br>
+      <a href="https://scholar.google.com/citations?user=KtA5IkAAAAAJ" target="_blank">Google Scholar</a><br>
+      <a href="https://github.com/BingcongLi" target="_blank">GitHub</a><br>
+      <a href="https://www.linkedin.com/in/bingcong-li/" target="_blank">LinkedIn</a>
+    </div>
+    <hr class="divider" />
+  </aside>
+
+  <!-- ══════ MAIN ══════ -->
+  <div class="main">
+
+    <!-- Header: tabs only, logo is favicon -->
+    <div class="main-header">
+      <div class="tab-nav" role="tablist">
+        <button class="active"  data-tab="about">About</button>
+        <button data-tab="background">Background</button>
+        <button data-tab="publications">Publications</button>
+        <button data-tab="mentoring">Teaching &amp; Mentoring</button>
+        <button data-tab="service">Service</button>
+        <button data-tab="notes">Research Notes</button>
+      </div>
+    </div>
+
+    <!-- One panel per tab — content injected from markdown -->
+    <div class="tab-panel active" id="panel-about">
+
+      <!-- Bio (loaded from about.md) -->
+      <div class="md-body" id="about-bio-body"><p class="loading">Loading…</p></div>
+
+      <!-- News section inline -->
+      <div class="news-section">
+        <div class="sub-tab-nav" role="tablist">
+          <button class="sub-tab-btn active" data-sub="recent-news">Recent News</button>
+          <button class="sub-tab-btn" data-sub="old-news">Old News</button>
+        </div>
+        <div class="sub-panel active" id="sub-recent-news">
+          <div class="news-body recent"></div>
+        </div>
+        <div class="sub-panel" id="sub-old-news">
+          <div class="news-body old"></div>
+        </div>
+      </div>
+
+      <div class="page-footer">Bingcong Li · ETH Zürich · Last updated May 2026</div>
+    </div>
+    <div class="tab-panel" id="panel-background">
+      <div class="md-body"><p class="loading">Loading…</p></div>
+      <div class="page-footer">Bingcong Li · ETH Zürich · Last updated May 2026</div>
+    </div>
+    <div class="tab-panel" id="panel-publications">
+      <div class="md-body"><p class="loading">Loading…</p></div>
+      <div class="page-footer">Bingcong Li · ETH Zürich · Last updated May 2026</div>
+    </div>
+    <div class="tab-panel" id="panel-mentoring">
+      <div class="md-body"><p class="loading">Loading…</p></div>
+      <div class="page-footer">Bingcong Li · ETH Zürich · Last updated May 2026</div>
+    </div>
+    <div class="tab-panel" id="panel-service">
+      <div class="md-body"><p class="loading">Loading…</p></div>
+      <div class="page-footer">Bingcong Li · ETH Zürich · Last updated May 2026</div>
+    </div>
+
+    <div class="tab-panel" id="panel-notes">
+      <div class="md-body"><p class="loading">Loading…</p></div>
+      <div class="page-footer">Bingcong Li · ETH Zürich · Last updated May 2026</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────
+// CONFIG: map each tab ID → its markdown file
+// ─────────────────────────────────────────────
+const TABS = [
+  { id: 'about',        file: 'content/about.md' },
+  { id: 'background',   file: 'content/background.md' },
+  { id: 'publications', file: 'content/publications.md' },
+  { id: 'mentoring',    file: 'content/mentoring.md' },
+  { id: 'service',      file: 'content/service.md' },
+  { id: 'notes',        file: 'content/notes.md' },
+];
+
+// ─────────────────────────────────────────────
+// marked.js configuration
+// ─────────────────────────────────────────────
+marked.setOptions({ breaks: true, gfm: true });
+
+// ─────────────────────────────────────────────
+// Post-process the rendered HTML for publications:
+// wraps each entry (bold title + authors + venue + links)
+// into a styled .pub-block div.
+// ─────────────────────────────────────────────
+function isLinkLine(line) {
+  return /\[<a\s+href=/.test(line);
+}
+
+function processPubs(html) {
+  const div = document.createElement('div');
+  div.innerHTML = html;
+
+  div.querySelectorAll('p').forEach(p => {
+    const firstEl = p.querySelector('strong:first-child');
+    if (!firstEl || p.firstElementChild !== firstEl) return;
+
+    const lines = p.innerHTML.split(/<br\s*\/?>/i);
+    if (lines.length < 2) return;
+
+    const titleLine  = lines[0];
+    const authorLine = lines[1];
+
+    // Remaining lines: detect venue vs link lines by content
+    let venueLine = '';
+    let linksLine = '';
+    lines.slice(2).forEach(line => {
+      const trimmed = line.trim();
+      if (!trimmed) return;
+      if (isLinkLine(trimmed)) linksLine += ' ' + trimmed;
+      else venueLine += (venueLine ? '<br>' : '') + trimmed;
+    });
+
+    // Convert [<a href="url">Label</a>] → styled pill button
+    const linkHtml = linksLine.replace(/\[<a href="([^"]*)"[^>]*>([^<]+)<\/a>\]/g,
+      (_, url, label) => `<a class="pub-btn" href="${url}">${label}</a>`);
+
+    const block = document.createElement('div');
+    block.className = 'pub-block';
+    block.innerHTML = `
+      <span class="pub-title">${titleLine}</span>
+      <span class="pub-authors">${authorLine}</span>
+      ${venueLine ? `<span class="pub-venue">${venueLine}</span>` : ''}
+      ${linkHtml  ? `<div class="pub-links">${linkHtml}</div>` : ''}
+    `;
+    p.replaceWith(block);
+  });
+
+  div.querySelectorAll('hr').forEach(hr => hr.remove());
+  return div.innerHTML;
+}
+
+// ─────────────────────────────────────────────
+// Post-process entry-based tabs (background, mentoring)
+// Wraps consecutive <p> blocks between h2/h3 headings
+// into a styled entry-block container.
+// ─────────────────────────────────────────────
+function processEntries(html) {
+  const div = document.createElement('div');
+  div.innerHTML = html;
+
+  // For each <p> that starts with <strong>, style it as an entry
+  div.querySelectorAll('p').forEach(p => {
+    const strong = p.querySelector('strong');
+    if (!strong || p.firstElementChild !== strong) return;
+
+    // Re-render the inner lines with better structure
+    const lines = p.innerHTML.split(/<br\s*\/?>/i);
+    if (lines.length < 2) return;
+
+    const nameLine  = lines[0]; // **Name** · place
+    const rest      = lines.slice(1);
+
+    // Last line is often *italic date* — pull it out
+    const lastLine  = rest[rest.length - 1] || '';
+    const isDate    = /^<em>/.test(lastLine.trim());
+    const bodyLines = isDate ? rest.slice(0, -1) : rest;
+    const dateLine  = isDate ? lastLine : '';
+
+    p.innerHTML = `
+      <span style="font-size:1rem;font-weight:400;line-height:1.5;display:block;margin-bottom:0.15rem;">${nameLine}</span>
+      ${bodyLines.map(l => `<span style="font-size:0.97rem;color:var(--muted);display:block;line-height:1.6;">${l}</span>`).join('')}
+      ${dateLine ? `<span style="font-size:0.88rem;color:var(--light);display:block;margin-top:0.25rem;font-style:italic;">${dateLine.replace(/<\/?em>/g,'')}</span>` : ''}
+    `;
+    p.style.cssText = 'padding:0.85rem 0;margin-bottom:0;max-width:660px;';
+  });
+
+  return div.innerHTML;
+}
+async function loadTab(tabId, filePath) {
+  const panel = document.getElementById('panel-' + tabId);
+  const body  = panel.querySelector('.md-body');
+
+  try {
+    const res = await fetch(filePath);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const md  = await res.text();
+    let html  = marked.parse(md);
+
+    if (tabId === 'publications' || tabId === 'notes') html = processPubs(html);
+    if (tabId === 'background' || tabId === 'mentoring' || tabId === 'service') html = processEntries(html);
+
+    if (tabId === 'about') {
+      document.getElementById('about-bio-body').innerHTML = html;
+    } else {
+      body.innerHTML = html;
+    }
+  } catch (err) {
+    body.innerHTML = `<p style="color:#c00">Could not load <code>${filePath}</code>.<br>
+      Make sure you are serving the files (e.g. <code>python3 -m http.server</code>
+      or Live Server in VS Code) — browsers block direct file:// fetches.</p>`;
+  }
+}
+
+// ─────────────────────────────────────────────
+// Sub-tab switching (inside About)
+// ─────────────────────────────────────────────
+document.querySelectorAll('.sub-tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.sub;
+    document.querySelectorAll('.sub-tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('sub-' + target).classList.add('active');
+  });
+});
+
+// ─────────────────────────────────────────────
+// Load & split news.md into recent / old
+// ─────────────────────────────────────────────
+async function loadNews() {
+  try {
+    const res = await fetch('content/news.md');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const md = await res.text();
+
+    // Split on the "# Old News" heading
+    const [recentRaw, oldRaw] = md.split(/^#\s+Old News/m);
+
+    function renderNewsList(raw) {
+      if (!raw) return '';
+      const html = marked.parse(raw.trim());
+      // Wrap in news-list class and style the date bold
+      const div = document.createElement('div');
+      div.innerHTML = html;
+      const ul = div.querySelector('ul');
+      if (ul) {
+        ul.className = 'news-list';
+        ul.querySelectorAll('li').forEach(li => {
+          // Bold the date pattern **MM/YYYY.**
+          li.innerHTML = li.innerHTML.replace(
+            /\*\*(\d{2}\/\d{4}\.?)\*\*/g,
+            '<span class="news-date">$1</span>'
+          );
+        });
+      }
+      return div.innerHTML;
+    }
+
+    document.querySelector('.news-body.recent').innerHTML = renderNewsList(recentRaw);
+    document.querySelector('.news-body.old').innerHTML    = renderNewsList(oldRaw ? '# Old News\n' + oldRaw : '');
+  } catch (err) {
+    document.querySelector('.news-body.recent').innerHTML =
+      `<p style="color:#c00">Could not load news.md. Make sure you serve with a local server.</p>`;
+  }
+}
+function activateTab(tabId) {
+  document.querySelectorAll('.tab-nav button').forEach(b =>
+    b.classList.toggle('active', b.dataset.tab === tabId));
+  document.querySelectorAll('.tab-panel').forEach(p =>
+    p.classList.toggle('active', p.id === 'panel-' + tabId));
+  document.querySelectorAll('.sidebar-nav a').forEach(a =>
+    a.classList.toggle('active', a.dataset.tab === tabId));
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.querySelectorAll('.tab-nav button, .sidebar-nav a').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    activateTab(el.dataset.tab);
+  });
+});
+
+// ─────────────────────────────────────────────
+// Load all tabs on page start
+// ─────────────────────────────────────────────
+TABS.forEach(({ id, file }) => loadTab(id, file));
+loadNews();
+</script>
+
+</body>
+</html>

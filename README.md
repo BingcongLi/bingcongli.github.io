@@ -1,41 +1,172 @@
+# Personal Website — Bingcong Li
 
-# Academic Pages
+## File Structure
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+```
+your-site/
+├── index.html              ← main website (do not edit unless changing layout)
+└── content/
+    ├── photo.png           ← your profile photo (sidebar)
+    ├── logo.png            ← your logo (browser tab favicon)
+    ├── about.md            ← About tab: bio + research thrusts
+    ├── news.md             ← About tab: Recent News + Old News
+    ├── background.md       ← Background tab: education, experience, awards
+    ├── publications.md     ← Publications tab
+    ├── mentoring.md        ← Teaching & Mentoring tab
+    ├── service.md          ← Service tab: talks, workshops, reviewer
+    └── notes.md            ← Research Notes tab
+```
 
-Academic Pages is a Github Pages template for academic websites.
+---
 
+## How to Run Locally
 
-# Getting Started
+Browsers block local file fetches, so you need a simple server:
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+```bash
+# Option 1 — Python (no install needed)
+cd your-site
+python3 -m http.server
+# then open http://localhost:8000
 
-See more info at https://academicpages.github.io/
+# Option 2 — VS Code
+# Install the "Live Server" extension → right-click index.html → Open with Live Server
+# It auto-refreshes whenever you save a markdown file.
+```
 
-## Running Locally
+---
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+## How to Edit Content
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+All content lives in the `content/` folder as plain markdown files.  
+**You never need to touch `index.html`** unless you want to change the layout.
 
+### Add a news item
+Open `content/news.md`. Each item is a bullet:
+```markdown
+- **MM/YYYY.** Your news text here. [Optional link](https://url)
+```
+Paste new items at the top of `# Recent News`.  
+Move old items to `# Old News` to archive them.
 
-# Maintenance 
+---
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+### Add a publication
+Open `content/publications.md`. Each entry follows this format:
+```markdown
+**Title of the paper.**
+Author One, **Bingcong Li**, Author Three.
+*Proc. of Conference Name* (**ABBREV**), Year.
+[[Paper](https://arxiv-or-pdf-url)] [[Code](https://github-url)]
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+---
+```
+- Your name must be wrapped in `**double asterisks**` to appear bold.
+- `[[Paper](url)]` renders as a pill button. Add `[[Code](url)]`, `[[Slides](url)]` etc. as needed.
+- Paste new entries at the top of `## Conference Papers`.
 
-## Bugfixes and enhancements
+---
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+### Add a mentee
+Open `content/mentoring.md`. Each entry:
+```markdown
+**Name** · Institution, Period
+Topic of supervision.
+*Outcome (e.g. NeurIPS 2025)*
+```
+Place under the correct section: `## Ph.D. Researchers`, `## Master Students`, or `## Bachelor Students`.
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+---
+
+### Add a talk or workshop
+Open `content/service.md`.
+
+**Invited Talk:**
+```markdown
+**Talk Title**
+Venue 1, City · *Month Year*
+Venue 2, City · *Month Year*
+```
+
+**Workshop:**
+```markdown
+**Workshop Title**
+Venue, City, Month Year
+```
+
+---
+
+### Add a research note
+Open `content/notes.md`. Same format as publications:
+```markdown
+**Note title.**
+*One-line description.*
+[[Read](https://url)]
+
+---
+```
+
+---
+
+## Sidebar Info
+
+The sidebar (name, title, contact links) is hardcoded in `index.html`.  
+To update it, open `index.html` and find this block (~line 330):
+
+```html
+<div class="sidebar-name">Bingcong Li</div>
+<div class="sidebar-title">
+  Postdoctoral Researcher<br>
+  Dept. of Computer Science<br>
+  ETH Zürich
+</div>
+<div class="sidebar-contact">
+  <a href="mailto:...">bingcong.li[@]inf.ethz.ch</a><br>
+  ...
+</div>
+```
+
+---
+
+## Photos & Logo
+
+| File | Used for |
+|---|---|
+| `content/photo.png` | Profile photo in sidebar |
+| `content/logo.png` | Browser tab favicon |
+
+To update either, just replace the file — keep the same filename.
+
+---
+
+## Deployment (GitHub Pages)
+
+1. Create a repo named `bingcongli.github.io` on GitHub
+2. Push the entire folder (index.html + content/) to the `main` branch
+3. Go to **Settings → Pages → Source: main branch / root**
+4. Your site is live at `https://bingcongli.github.io`
+
+To update: edit any `.md` file, commit, and push — the site updates automatically.
+
+---
+
+## Tab Overview
+
+| Tab | Source file | Notes |
+|---|---|---|
+| About | `content/about.md` + `content/news.md` | Bio, thrusts, Recent/Old News sub-tabs |
+| Background | `content/background.md` | Education, experience, awards |
+| Publications | `content/publications.md` | Conference papers + journal articles |
+| Teaching & Mentoring | `content/mentoring.md` | Teaching + PhD/Master/Bachelor mentees |
+| Service | `content/service.md` | Tutorials, workshops, talks, reviewer |
+| Research Notes | `content/notes.md` | Informal notes, blog post links |
+
+---
+
+## Tips
+
+- **Markdown renders live** — save the file, refresh the browser.
+- **`---` in publications.md** separates entries visually (the renderer removes the line).
+- **Bold your name** in every author list: `**Bingcong Li**`
+- **Equal contribution**: use `**Bingcong Li**\*` (the `\*` renders as a literal asterisk).
+- The `*italic*` date line at the end of a mentoring entry is detected automatically and styled as a small gray date.
