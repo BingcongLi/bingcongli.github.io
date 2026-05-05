@@ -23,3 +23,5 @@ __pycache__/
 
 # Node (if you ever add tooling)
 node_modules/
+
+README.md
