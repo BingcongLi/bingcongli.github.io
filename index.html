@@ -213,6 +213,50 @@
     .md-body strong { font-weight: 600; }
     .md-body em { font-style: italic; }
 
+    /* ── Expandable bullet thrusts ── */
+    .expandable-li { list-style: none; }
+    .expandable-li::before { content: none !important; }
+
+    .thrust-summary {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.15s;
+    }
+    .thrust-summary::before {
+      content: '•';
+      color: var(--light);
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+    .thrust-summary:hover { color: var(--accent); }
+    .thrust-summary:hover .thrust-arrow { color: var(--accent); }
+    .thrust-summary-text { flex: 1; }
+
+    .thrust-arrow {
+      font-size: 0.65rem;
+      color: var(--light);
+      flex-shrink: 0;
+      transition: transform 0.22s ease, color 0.15s;
+      display: inline-block;
+    }
+    .thrust-summary.open .thrust-arrow { transform: rotate(180deg); }
+
+    .thrust-detail {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.75;
+      padding-left: 1.1rem;
+    }
+    .thrust-detail.open { max-height: 400px; padding: 0.5rem 0 0.3rem 1.1rem; }
+    .thrust-detail a { color: var(--link); }
+
     /* Research thrust list — bullet instead of bar */
     .md-body ul { list-style: none; padding: 0; margin: 0.8rem 0 1.2rem; }
     .md-body ul li {
@@ -224,6 +268,25 @@
       content: '•';
       position: absolute; left: 0;
       color: var(--light); font-size: 1rem;
+    }
+
+    /* "Read more" pill inside thrust list items */
+    .md-body ul li a {
+      font-size: 0.72rem;
+      color: var(--muted);
+      border: 1px solid var(--border-dark);
+      border-radius: 20px;
+      padding: 1px 10px;
+      margin-left: 0.5rem;
+      text-decoration: none;
+      white-space: nowrap;
+      vertical-align: middle;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .md-body ul li a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      text-decoration: none;
     }
 
     /* Tables */
@@ -570,9 +633,10 @@ async function loadTab(tabId, filePath) {
     let html  = marked.parse(md);
 
     if (tabId === 'publications' || tabId === 'notes') html = processPubs(html);
-    if (tabId === 'background' || tabId === 'mentoring' || tabId === 'service') html = processEntries(html);
+    if (tabId === 'background' || tabId === 'mentoring') html = processEntries(html);
 
     if (tabId === 'about') {
+      html = processThrusts(html);
       document.getElementById('about-bio-body').innerHTML = html;
     } else {
       body.innerHTML = html;
@@ -585,8 +649,37 @@ async function loadTab(tabId, filePath) {
 }
 
 // ─────────────────────────────────────────────
-// Sub-tab switching (inside About)
+// Post-process expandable bullets in About tab
+// List items containing ||| split into summary + detail
 // ─────────────────────────────────────────────
+function processThrusts(html) {
+  const div = document.createElement('div');
+  div.innerHTML = html;
+
+  div.querySelectorAll('li').forEach(li => {
+    const raw = li.innerHTML;
+    const splitIdx = raw.indexOf('|||');
+    if (splitIdx === -1) return;
+
+    const summary = raw.slice(0, splitIdx).trim();
+    const detail  = raw.slice(splitIdx + 3).trim();
+
+    li.innerHTML = `
+      <span class="thrust-summary" onclick="toggleBullet(this)">
+        <span class="thrust-summary-text">${summary}</span>
+        <span class="thrust-arrow">▼</span>
+      </span>
+      <span class="thrust-detail">${detail}</span>`;
+    li.classList.add('expandable-li');
+  });
+
+  return div.innerHTML;
+}
+
+function toggleBullet(el) {
+  el.classList.toggle('open');
+  el.nextElementSibling.classList.toggle('open');
+}
 document.querySelectorAll('.sub-tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const target = btn.dataset.sub;
@@ -651,6 +744,18 @@ document.querySelectorAll('.tab-nav button, .sidebar-nav a').forEach(el => {
     e.preventDefault();
     activateTab(el.dataset.tab);
   });
+});
+
+// Handle anchor links that switch tabs (e.g. href="#publications")
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  const tabId = a.getAttribute('href').replace('#', '');
+  const panel = document.getElementById('panel-' + tabId);
+  if (panel) {
+    e.preventDefault();
+    activateTab(tabId);
+  }
 });
 
 // ─────────────────────────────────────────────
