@@ -1,5 +1,6 @@
 # Recent News
 
+- **07/2026.** We are orginizing "[On-Device Intelligence](https://fmorec2026.github.io/)" workshop at NeurIPS 2026 -- see you in Sydney!
 - **05/2026.** Check out our tutorial "Low-Rank Adaptation Redux in Large Models" at [ICASSP 2026](https://2026.ieeeicassp.org/tutorials/)!
 - **04/2026.** Two papers are accepted to ICML 2026.
 - **04/2026.** I will visit Lund University for the Optimization for Learning Symposium.
@@ -14,11 +15,12 @@
 - **07/2025.** Talked about Riemannian optimization and its provable merits for fine-tuning LLMs at EUROPT 2025.
 - **06/2025.** Talked about "LoRA Surgery" at the [Efficient Machine Learning Reading Group](https://sites.google.com/view/efficientml).
 - **05/2025.** [ICML 2025] Transfer learning provably benefits RLHF. See our [paper](https://arxiv.org/abs/2502.19255v3).
-- **04/2025.** Talked about "Fine-tuning LLMs cost-efficiently" at Peking University.
-- **01/2025.** [ICLR 2025] We prove that [initialization exponentially impacts convergence of ScaledGD](https://arxiv.org/abs/2410.18965) on LoRA-type problems.
+
 
 # Old News
 
+- **04/2025.** Talked about "Fine-tuning LLMs cost-efficiently" at Peking University.
+- **01/2025.** [ICLR 2025] We prove that [initialization exponentially impacts convergence of ScaledGD](https://arxiv.org/abs/2410.18965) on LoRA-type problems.
 - **12/2024.** Talked about "Architecture-Aware Optimization" at ELLIS UnConference.
 - **12/2024.** [ICASSP 2025] A new variant of SAM is released.
 - **09/2024.** [NeurIPS 2024] We study the [implicit regularization of SAM](https://arxiv.org/abs/2410.14802) and use it to reduce computational burden. Useful for fine-tuning LLMs with LoRA.

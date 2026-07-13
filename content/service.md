@@ -9,6 +9,9 @@ Barcelona, Spain, May 2026.
 
 ## Workshop Organizing
 
+**On-Device Intelligence: Foundation Models under Real-World Constraints**
+NeurIPS 2026, Sydney, Dec 2026
+
 **Recent Advances in Optimization at INFORMS Optimization Society Conference**
 Atlanta, March 2026
 

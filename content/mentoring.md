@@ -8,7 +8,7 @@ If you are interested in either (1) applying theory to advance foundation models
 
 
 - Junior PhD Projects. [[Project 1](https://arxiv.org/abs/2506.03133)][[Project 2](https://arxiv.org/abs/2505.18877)]
-- Master PhD projects [[Project 1](https://arxiv.org/abs/2510.01175)][[Project 2](#)]
+- Master PhD projects [[Project 1](https://arxiv.org/abs/2510.01175)][[Project 2](https://arxiv.org/abs/2606.31390)]
 - Bechelor Thesis [[Project 1](https://arxiv.org/abs/2511.02757)]
 
 ## Teaching
