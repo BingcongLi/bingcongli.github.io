@@ -1,6 +1,7 @@
 # Recent News
 
-- **07/2026.** We are orginizing "[On-Device Intelligence](https://fmorec2026.github.io/)" workshop at NeurIPS 2026 -- see you in Sydney!
+- **08/2026.** Tutorial "Low-Rank Adaptation Redux in Large Models" accepted to [MLSP 2026](https://mlsp26.ieeesps.org/event/2026-ieee-international-workshop-on-machine-learning-for-signal-processing/) -- see you in Atlanta!
+- **07/2026.** We are orginizing "[On-Device Intelligence](https://odi2026.github.io/)" workshop at NeurIPS 2026 -- see you in Sydney!
 - **05/2026.** Check out our tutorial "Low-Rank Adaptation Redux in Large Models" at [ICASSP 2026](https://2026.ieeeicassp.org/tutorials/)!
 - **04/2026.** Two papers are accepted to ICML 2026.
 - **04/2026.** I will visit Lund University for the Optimization for Learning Symposium.

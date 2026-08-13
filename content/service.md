@@ -6,6 +6,8 @@
 with Yilang Zhang and Georgios B. Giannakis
 IEEE International Conference on Acoustics, Speech, and Signal Processing, [[post](https://2026.ieeeicassp.org/tutorials/)]
 Barcelona, Spain, May 2026. 
+IEEE International Workshop on Machine Learning for Signal Processing
+Atlanta, USA, Sept 2026. 
 
 ## Workshop Organizing
 
