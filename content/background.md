@@ -1,5 +1,3 @@
-# More about me
-
 ## Education & Experience
 
 **Postdoctoral Researcher, ETH Zürich,** 

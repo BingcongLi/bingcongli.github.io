@@ -14,7 +14,7 @@ your-site/
     ├── publications.md     ← Publications tab
     ├── mentoring.md        ← Teaching & Mentoring tab
     ├── service.md          ← Service tab: talks, workshops, reviewer
-    └── notes.md            ← Research Notes tab
+    └── notes.md            ← Blog tab
 ```
 
 ---
@@ -96,7 +96,7 @@ Venue, City, Month Year
 
 ---
 
-### Add a research note
+### Add a blog post
 Open `content/notes.md`. Same format as publications:
 ```markdown
 **Note title.**
@@ -159,7 +159,7 @@ To update: edit any `.md` file, commit, and push — the site updates automatica
 | Publications | `content/publications.md` | Conference papers + journal articles |
 | Teaching & Mentoring | `content/mentoring.md` | Teaching + PhD/Master/Bachelor mentees |
 | Service | `content/service.md` | Tutorials, workshops, talks, reviewer |
-| Research Notes | `content/notes.md` | Informal notes, blog post links |
+| Blog | `content/notes.md` | Informal notes, blog post links |
 
 ---
 

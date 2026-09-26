@@ -2,9 +2,11 @@
 
 ## Preprint
 
-**Ancre: Adaptive neural connection reassignment for efficient depth scaling.**
-Yilang Zhang\*, **Bingcong Li**\*, Niao He, Georgios B. Giannakis.
-[[Paper](https://arxiv.org/abs/2602.09009)]
+**Muown: Row-norm control for Muon optimization.**
+Kai Lion, Florian Hubler, **Bingcong Li**, Antonio Orvieto, Niao He.
+*Used in mid-training of [MiMo-V2.6](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf).*
+*Leading the board of [Modded-NanoGPT Optimization Benchmark](https://github.com/KellerJordan/modded-nanogpt/tree/master/records/track_3_optimization) at least until June 10, 2026.*
+[[Paper](https://arxiv.org/abs/2605.10797)]
 
 **Adaptive test-time compute allocation for reasoning LLMs via constrained policy optimization.**
 Zhiyuan Zhai, **Bingcong Li**, Bingnan Xiao, Ming Li, Xin Wang.
@@ -14,11 +16,6 @@ Zhiyuan Zhai, **Bingcong Li**, Bingnan Xiao, Ming Li, Xin Wang.
 Yudong Wei, Liang Zhang, **Bingcong Li**, Niao He.
 [[Paper](https://arxiv.org/abs/2606.31390)]
 
-**Muown: Row-norm control for Muon optimization.**
-Kai Lion, Florian Hubler, **Bingcong Li**, Antonio Orvieto, Niao He.
-*Leading the board of [Modded-NanoGPT Optimization Benchmark](https://github.com/KellerJordan/modded-nanogpt/tree/master/records/track_3_optimization) at least until June 10, 2026.*
-[[Paper](https://arxiv.org/abs/2605.10797)]
-
 
 
 ## Tutorial Papers
@@ -26,10 +23,32 @@ Kai Lion, Florian Hubler, **Bingcong Li**, Antonio Orvieto, Niao He.
 **Low-rank adaptation redux for large models.**
 **Bingcong Li**, Yilang Zhang, Georgios B. Giannakis.
 *Half-day tutorial talk, **ICASSP** 2026.*
+*Tutorial talk, **MLSP** 2026.*
 [[Paper](https://arxiv.org/abs/2604.21905)][[Slides](https://drive.google.com/file/d/12z0gCypi_02OGbAugWSM3UkY7V7O5hpn/view?usp=sharing)]
 
 
 ## Conference Papers
+
+**Ancre: Adaptive neural connection reassignment for efficient depth scaling.**
+Yilang Zhang\*, **Bingcong Li**\*, Niao He, Georgios B. Giannakis.
+*Proc. of Neural Information Processing Systems* (**NeurIPS**), 2026.
+[[Paper](https://arxiv.org/abs/2602.09009)]
+
+---
+
+**FedVSSAM: Mitigating flatness incompatibility in sharpness-aware federated learning.**
+Bingnan Xiao, Yuan Gao, **Bingcong Li**, Wei Ni, Xin Wang, Tony Q. S. Quek.
+*Proc. of Neural Information Processing Systems* (**NeurIPS**), 2026.
+[[Paper](https://arxiv.org/abs/2605.09144)]
+
+---
+
+**Scalable variational Bayesian fine-tuning of LLMs via orthogonalized low-rank adapters.**
+Haotian Xiang, **Bingcong Li**, Qin Lu.
+*Proc. of Neural Information Processing Systems* (**NeurIPS**), 2026.
+[[Paper](https://arxiv.org/abs/2604.03388)]
+
+---
 
 **Zeroth-order optimization at the edge of stability.**
 Minhak Song, Liang Zhang, **Bingcong Li**, Niao He, Michael Muehlebach, Sewoong Oh.

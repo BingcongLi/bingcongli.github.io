@@ -1,15 +1,11 @@
-# Teaching & Mentoring
-
 ## Student projects
 
-We have several projects available for ETH master’s students across a range of topics; some examples are listed below.
-
-If you are interested in either (1) applying theory to advance foundation models or (2) developing new theoretical perspectives on foundation models, feel free to reach out.
+We have several projects available for ETH master’s students across a range of topics; some examples are listed below. If you are interested in either (1) applying theory to advance foundation models or (2) developing new theoretical perspectives on foundation models, feel free to reach out.
 
 
-- Junior PhD Projects. [[Project 1](https://arxiv.org/abs/2506.03133)][[Project 2](https://arxiv.org/abs/2505.18877)]
-- Master PhD projects [[Project 1](https://arxiv.org/abs/2510.01175)][[Project 2](https://arxiv.org/abs/2606.31390)]
-- Bechelor Thesis [[Project 1](https://arxiv.org/abs/2511.02757)]
+- PhD projects [[Project 1](https://arxiv.org/abs/2506.03133)][[Project 2](https://arxiv.org/abs/2505.18877)]
+- Master projects [[Project 1](https://arxiv.org/abs/2510.01175)][[Project 2](https://arxiv.org/abs/2606.31390)]
+- Bachelor thesis [[Project 1](https://arxiv.org/abs/2511.02757)]
 
 ## Teaching
 

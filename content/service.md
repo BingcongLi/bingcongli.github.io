@@ -1,12 +1,10 @@
-# Service
-
 ## Tutorials
 
 **Low-Rank Adaptation Redux in Large Models**
 with Yilang Zhang and Georgios B. Giannakis
 IEEE International Conference on Acoustics, Speech, and Signal Processing, [[post](https://2026.ieeeicassp.org/tutorials/)]
 Barcelona, Spain, May 2026. 
-IEEE International Workshop on Machine Learning for Signal Processing
+IEEE International Workshop on Machine Learning for Signal Processing, [[post](https://neuroneural.net/mlsp2026schedule/)]
 Atlanta, USA, Sept 2026. 
 
 ## Workshop Organizing
@@ -26,6 +24,8 @@ Zürich, July 2025. [[post](https://las.inf.ethz.ch/opttwoface)]
 ## Invited Talks
 
 **Scaling Large Efficiently for LLMs**
+[Swiss Optimization Symposium](https://swiss-opt.github.io/program/), Monte Verità, Ascona, Switzerland · *August 2026*
+The Chinese University of Hong Kong, Dept. of Information Engineering, *August 2026*
 The Chinese University of Hong Kong, Dept. of CSE, *July 2026*
 Optimization for Learning Workshop, Lund University, Sweden. *April 2026*
 INFORMS Optimization Society Conference, Atlanta.  *March 2026*
@@ -50,17 +50,20 @@ Peking University · *April 2025*
 EPFL LIONS · *April 2025*
 ELLIS UnConference, Bad Teinach, Germany · *December 2024*
 
-## Reviewer
+## Area Chair & Reviewer
 
-**Conferences**
-- NeurIPS 2021–2026 
-- ICML 2021–2026 
-- ICLR 2022–2026 
+**Area Chair**
+- ICLR 2027
+- NeurIPS 2026 Workshop on Foundations of LLM Post-Training in Changing Environments (FLLMPT)
+- NeurIPS 2026 Workshop on SLMs for Agentic Systems (SLM-Agents)
+
+**Reviewer**
+- NeurIPS 2021–2026
+- ICML 2021–2026
+- ICLR 2022–2026
 - AISTATS 2021–2023, 2025
-- AAAI 2021, 2025 
+- AAAI 2021, 2025
 - IEEE GLOBECOM 2019, 2020
-
-**Journals**
 - IEEE Transactions on Pattern Analysis and Machine Intelligence
 - IEEE Transactions on Neural Networks and Learning Systems
 - IEEE Transactions on Automatic Control
