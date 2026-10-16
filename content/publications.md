@@ -2,6 +2,14 @@
 
 ## Preprint
 
+**Rethinking routing exploration in modern mixture-of-experts.**
+**Bingcong Li**, Hao Ma, Michael Muehlebach, Niao He, Yi Ma.
+[[Paper](https://arxiv.org/abs/2610.22353)][[Code](https://github.com/BingcongLi/MirrorMoE/tree/main)]
+
+**Adaptive power sampling for LLM reasoning.**
+Bingnan Xiao, Chenhao Yang, **Bingcong Li**\*, Wei Ni, Xin Wang\*.
+[[Paper](https://arxiv.org/abs/2610.08563)]
+
 **Muown: Row-norm control for Muon optimization.**
 Kai Lion, Florian Hubler, **Bingcong Li**, Antonio Orvieto, Niao He.
 *Used in mid-training of [MiMo-V2.6](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf).*
@@ -32,7 +40,7 @@ Yudong Wei, Liang Zhang, **Bingcong Li**, Niao He.
 **Ancre: Adaptive neural connection reassignment for efficient depth scaling.**
 Yilang Zhang\*, **Bingcong Li**\*, Niao He, Georgios B. Giannakis.
 *Proc. of Neural Information Processing Systems* (**NeurIPS**), 2026.
-[[Paper](https://arxiv.org/abs/2602.09009)]
+[[Paper](https://arxiv.org/abs/2602.09009)][[Code](https://github.com/zhangyilang/ANCRe)]
 
 ---
 

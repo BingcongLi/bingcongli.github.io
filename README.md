@@ -62,7 +62,8 @@ Author One, **Bingcong Li**, Author Three.
 ---
 ```
 - Your name must be wrapped in `**double asterisks**` to appear bold.
-- `[[Paper](url)]` renders as a pill button. Add `[[Code](url)]`, `[[Slides](url)]` etc. as needed.
+- `[[Paper](url)]` renders as a boxed link button. Add `[[Code](url)]`, `[[Slides](url)]` etc. as needed.
+- No link yet? `[[Paper]()]` (empty link) shows a greyed-out placeholder box until you add the url.
 - Paste new entries at the top of `## Conference Papers`.
 
 ---

@@ -68,6 +68,7 @@
       font-size: 0.88rem; color: var(--muted);
       line-height: 1.55; margin-bottom: 1.2rem;
     }
+    .sidebar-title:has(+ .sidebar-title) { margin-bottom: 0.6rem; }
     .sidebar-contact {
       font-size: 0.85rem; color: var(--muted);
       margin-bottom: 1.6rem; line-height: 1.9;
@@ -443,6 +444,16 @@
     .md-body .pub-btn svg { display: block; }
     .md-body li .pub-links { display: inline-flex; flex-wrap: wrap; gap: 8px; margin-left: 0.6rem; vertical-align: middle; }
     .md-body .pub-btn:hover { background: var(--text); color: #fff; text-decoration: none; }
+    .md-body .pub-btn-idle { color: var(--light); border-color: var(--border-dark); cursor: default; }
+    .md-body .pub-btn-idle:hover { background: #fff; color: var(--light); }
+
+    /* Publications tab: smaller type so more papers fit on screen */
+    #panel-publications .pub-block { padding: 12px 0; }
+    #panel-publications .pub-block .pub-title { font-size: 1rem; margin-bottom: 3px; }
+    #panel-publications .pub-block .pub-authors,
+    #panel-publications .pub-block .pub-venue { font-size: 0.84rem; line-height: 1.4; }
+    #panel-publications .pub-block .pub-links { margin-top: 8px; }
+    #panel-publications .md-body .pub-btn { height: 28px; min-width: 76px; font-size: 0.72rem; }
 
     /* ── Footer ── */
     .page-footer {
@@ -476,6 +487,10 @@
       <img src="content/photo.png" alt="Bingcong Li">
     </div>
     <div class="sidebar-name">Bingcong Li</div>
+    <div class="sidebar-title">
+      Incoming Assistant Professor<br>
+      The University of Hong Kong
+    </div>
     <div class="sidebar-title">
       Postdoctoral Researcher<br>
       Dept. of Computer Science<br>
@@ -578,10 +593,12 @@ marked.setOptions({ breaks: true, gfm: true });
 // ─────────────────────────────────────────────
 const ARROW_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>';
 
-// Convert [<a href="url">Label</a>] → boxed link button with an arrow
+// Convert [<a href="url">Label</a>] → boxed link button with an arrow.
+// An empty url (written [[Paper]()] in markdown) gives a greyed-out placeholder box.
 function linkButtons(html) {
-  return html.replace(/\[<a href="([^"]*)"[^>]*>([^<]+)<\/a>\]/g,
-    (_, url, label) => `<a class="pub-btn" href="${url}" target="_blank" rel="noopener" aria-label="${label}">${label}${ARROW_SVG}</a>`);
+  return html.replace(/\[<a href="([^"]*)"[^>]*>([^<]+)<\/a>\]/g, (_, url, label) => url
+    ? `<a class="pub-btn" href="${url}" target="_blank" rel="noopener" aria-label="${label}">${label}${ARROW_SVG}</a>`
+    : `<span class="pub-btn pub-btn-idle" title="Coming soon" aria-disabled="true">${label}</span>`);
 }
 
 function isLinkLine(line) {

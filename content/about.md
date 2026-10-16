@@ -1,3 +1,4 @@
+I am an incoming tenure-track assistant professor at the University of Hong Kong.
 I am currently a postdoctoral researcher at ETH Zürich working with [Prof. Niao He](https://niao-he.com). I completed my Ph.D. in Electrical and Computer Engineering at the University of Minnesota, advised by [Prof. Georgios B. Giannakis](https://cse.umn.edu/ece/georgios-giannakis).
 
 **Research interests.** Scaling is the art of brute force: converting computation into capability through predictable scaling laws. My research develops a **scaling view of intelligence**.

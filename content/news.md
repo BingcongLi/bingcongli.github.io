@@ -1,6 +1,9 @@
 # Recent News
 
+- **10/2026.** Two papers out: one on [test-time scaling](https://arxiv.org/abs/2610.08563) and one on [scaling modern MoE pretraining](https://arxiv.org/abs/2610.22353).
+- **09/2026.** Check out my blog on "[Scaling Almost Anything?](https://bingcongli.github.io/bc.thoughts/post-scaling-almost-anything.html)"
 - **09/2026.** Three papers accepted to NeurIPS 2026.
+- **09/2026.** Our optimizer [Muown](https://arxiv.org/abs/2605.10797) is used in mid-training of [MiMo-V2.6](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf).
 - **08/2026.** Tutorial "Low-Rank Adaptation Redux in Large Models" accepted to [MLSP 2026](https://mlsp26.ieeesps.org/event/2026-ieee-international-workshop-on-machine-learning-for-signal-processing/).
 - **07/2026.** I will talk about "Efficient scaling of LLMs from an optimization perspective" at the [Swiss Optimization Symposium](https://swiss-opt.github.io/program/).
 - **07/2026.** We are organizing "[On-Device Intelligence](https://odi2026.github.io/)" workshop at NeurIPS 2026 -- see you in Sydney!

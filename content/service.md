@@ -9,7 +9,7 @@ Atlanta, USA, Sept 2026.
 
 ## Workshop Organizing
 
-**On-Device Intelligence: Foundation Models under Real-World Constraints**
+**[On-Device Intelligence](https://odi2026.github.io/): Foundation Models under Real-World Constraints**
 NeurIPS 2026, Sydney, Dec 2026
 
 **Recent Advances in Optimization at INFORMS Optimization Society Conference**
